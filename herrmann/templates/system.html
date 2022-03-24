@@ -1,0 +1,117 @@
+{% extends 'home.html' %}
+{% block content %}
+    <!-- Start Features Area -->
+    <section class="Features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="feature-content">
+                        <div class="title">
+                            <span class="wow fadeInRight" data-wow-delay=".3s">Ultrasonic welding systems for easy integration</span>
+                            <h3 class="wow fadeInRight" data-wow-delay=".5s">易于集成的超音波熔接系統</h3>
+                        </div>
+                        <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-arrow-right-circle"></i>
+                            </div>
+                            <div class="banner-content" style="padding-top: 2%;">
+                                <h2 class="title">易于集成的超音波熔接系統
+
+                                </h2>
+                                <p> 為了應對生產行業對複雜高效自動化系統不斷增長的需求，Herrmann Ultraschall推出了多種超音波系統集成解決方案。這一切都建立在豐富的超音波專業知識和現代化產品組合的基礎上: 從系統集成和順利調試到產品輔助和轉業操作培訓，Herrmann Ultraschall為安全靈活地應用自動化系統奠定了堅實的基礎。 </p>
+                            </div>
+                        </div>
+                        <div class="feature-item wow fadeInUp" data-wow-delay=".6s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-arrow-right-circle"></i>
+                            </div>
+                            <div class="banner-content" style="padding-top: 2%;">
+                                <h2 class="title">超音波熔接內嵌系統的優勢</h2>
+                                <p>
+                                   HiQ modular和MPW產品系列的所有熔接系統，如滑動托架單元VE SLIMLINE或VE COMPACLINE，都具有以下特點:<br><br>
+                                   成熟的自動化標準機技術<br>
+                                   熔接工藝控制器即大改進了熔接效果<br>
+                                    可單獨配置，滿足各種需求<br>
+                                    堅固元件並可連續操作<br>
+                                    全面的應用技術 – 超音波工程學<br><br>
+
+                                    超音波熔接系統的應用場景<br><br>
+
+                                    (海爾曼超音波)提供標準的滑動托架單元、HiQ和HiS模塊，具有高度的靈活性，可輕鬆滿足不同客戶的需要。模塊化系統可以為機器製造商和自動化行業提供大量集成解決方案。無論用於自動化系統還是機器手臂解決方案，每個超音波熔接系統都能夠形成一個功能單元，易於集成和啟動。超音波熔接系統已經在塑料和鋰離子電池行業得到廣泛應用。<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-lg-12 col-md-12 col-12">
+                    {% for herrmann in object_list %}
+                    <div class="col-lg-6 col-md-6">
+                        <!-- Button trigger modal -->
+                        <span type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ herrmann.id }}">
+                            <img src="{{ herrmann.sys_img_001 }}">
+                        </span>
+                        <h5>{{ herrmann.sys_tit }}</h5>
+                    </div>    
+                    {% endfor %}
+                    {% for herrmann in object_list %}
+                        <!-- Modal -->
+                        <div class="col-lg-6 col-md-6">
+                        <div class="modal fade" id="exampleModal-{{ herrmann.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel exampleModal">{{ herrmann.sys_tit }}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                {{ herrmann.sys_cont |safe }}
+
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                  <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ herrmann.sys_seri_001_tit_01 }}</button>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ herrmann.sys_seri_001_tit_02 }}</button>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-logic-tab" data-bs-toggle="pill" data-bs-target="#pills-logic" type="button" role="tab" aria-controls="pills-logic" aria-selected="false">{{ herrmann.sys_seri_001_tit_03 }}</button>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-solid-tab" data-bs-toggle="pill" data-bs-target="#pills-solid" type="button" role="tab" aria-controls="pills-solid" aria-selected="false">{{ herrmann.sys_seri_001_tit_04 }}</button>
+                                  </li>
+                                </ul>
+                                
+                                <div class="tab-content" id="pills-tabContent">
+                                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    {{ herrmann.sys_seri_001_1|safe }}
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    {{ herrmann.sys_seri_001_2|safe }}
+                                  </div>
+                                
+                                <div class="tab-pane fade" id="pills-logic" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    {{ herrmann.sys_seri_001_3|safe }}
+                                  </div>
+                                
+                                <div class="tab-pane fade" id="pills-solid" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    {{ herrmann.sys_seri_001_4|safe }}
+                                  </div>
+                                </div>
+                               
+
+
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                     {% endfor %}
+            </div>
+        </div>
+    </section>
+    
+    <!-- End Features Area -->
+{% endblock  %}

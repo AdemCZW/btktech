@@ -1,0 +1,23 @@
+{% extends 'home.html' %}
+{% block nav %}
+	 				{% for herrmann in home_001 %}
+                    <div class="col-lg-8 col-md-9 col-12">
+                        <div class="toolbar-contact">
+                            <p><i class="lni lni-envelope"></i><a href="mailto:support@gmail.com">{{ herrmann.mail_001 }}</a></p>
+                            <p><i class="lni lni-phone"></i><a href="tel:+123456789">{{ herrmann.phn_001 }}</a></p>
+                            <p><i class="lni lni-map-marker"></i>{{ herrmann.adr_001 }}</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-12">
+                        <div class="toolbar-sl-share">
+                            <ul>
+                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+{% endblock %}
+
+

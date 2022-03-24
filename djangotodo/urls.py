@@ -18,16 +18,16 @@ from django.urls import path, include
 from django.contrib.auth import views
 from django.contrib import admin  
 from todo import views
-from shotdogs import views
-
+from herrmann import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('todo.urls')),
-    path('index/', include('todo.urls')),
+    path('', include('herrmann.urls')),
+    path('index/', include('herrmann.urls')),
     path('flight/', include('todo.urls')),
     path('wedding/', include('todo.urls')),
-    path('shotdog/', include('shotdogs.urls')),
+    path('herrmann/', include('herrmann.urls')),
+    
 ]
 
