@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import index_01 ,welding_02 ,home ,cpn_01 ,mta_01
+from .models import index_01 ,welding_02 ,home ,cpn_01 ,mta_01 ,sys_01
 
 
 class home_Admin(admin.ModelAdmin):

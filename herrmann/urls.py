@@ -16,7 +16,7 @@ urlpatterns = [
     path('', IndexListView.as_view(), name="index"),
     path('welding', Welding_02View.as_view(), name="weld-2"),
     path('components', cpn_01View.as_view(), name="cpn"),
-    path('metal', mta_01View.as_view(), name="mta")
+    path('metal', mta_01View.as_view(), name="mta"),
     path('system', sys_01View.as_view(), name="sys")
    
    
