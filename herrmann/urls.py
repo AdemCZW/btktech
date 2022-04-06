@@ -12,7 +12,6 @@ from .views import (
 
 app_name = 'herrmann'
 urlpatterns = [
-    path('nav', HomeListView, name="home"),
     path('', IndexListView.as_view(), name="index"),
     path('welding', Welding_02View.as_view(), name="weld-2"),
     path('components', cpn_01View.as_view(), name="cpn"),

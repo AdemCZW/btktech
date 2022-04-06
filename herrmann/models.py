@@ -124,10 +124,10 @@ class sys_01(models.Model):
 	sys_seri_001_4 = RichTextField(max_length=10000,default='文字敘述',blank=True, null=True,verbose_name = '內容')
 
 	def __str__(self):
-		return "system-品項" + str(self.id) + " 號 "
+		return "application-應用" + str(self.id) + " 號 "
 
 	class Meta:
-		verbose_name_plural = "system-品項"
-		verbose_name = "system-品項"
+		verbose_name_plural = "application-應用"
+		verbose_name = "application-應用"
 
 
