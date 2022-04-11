@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate
 from django.utils.decorators import method_decorator
 from django.contrib import auth
-from .models import index_01, welding_01 ,welding_02, home, cpn_01 ,mta_01 ,sys_01
+from .models import index_01, welding_01 ,welding_02, home, cpn_01 ,mta_01 ,sys_01 ,bc_01, qa_01, ca_01
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import (
     ListView,
@@ -42,6 +42,18 @@ class mta_01View(ListView):
 class sys_01View(ListView):
     model = sys_01
     template_name = 'system.html'  # 樣板路徑  
+
+class bc_01View(ListView):
+    model = bc_01
+    template_name = 'branches.html'  # 樣板路徑  
+
+class qa_01View(ListView):
+    model = qa_01
+    template_name = 'qa.html'  # 樣板路徑  
+
+class ca_01View(ListView):
+    model = ca_01
+    template_name = 'contact.html'  # 樣板路徑  
 
 
 

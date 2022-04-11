@@ -1,0 +1,65 @@
+{% extends 'home.html' %}
+{% block content %}
+    <!-- Start Features Area -->
+    <section class="Features section">
+        <div class="container">
+            <div class="row">
+              
+                <div class="row col-lg-12 col-md-12 col-12">
+                  <div class="container">
+                    {% for herrmann in object_list %}
+                    <div style="padding-top: 1%;">
+                          <button style="background-color:rgba(13, 110, 252, 0)" class="btn btn-primary col-12" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-{{ herrmann.id }}" aria-expanded="false" aria-controls="collapseExample">
+                            <h4>{{ herrmann.bc_tit }}</h4>
+                          </button>
+                    </div>
+                        <div style="margin:1%;" class="collapse" id="collapseExample-{{ herrmann.id }}">
+                          <div class="card card-body">
+                            {{ herrmann.bc_cont |safe }}
+                 
+                            <hr>
+                            <div class="row col-lg-12 col-md-12 col-sm-6">
+                              <div class="col-lg-2 col-md-4">
+                                <img src="{{ herrmann.bc_img_001 }}">
+                              </div>
+                              <div class="col-lg-2 col-md-4">
+                                <img src="{{ herrmann.bc_img_002 }}">
+                              </div>
+                              <div class="col-lg-2 col-md-4">
+                                <img src="{{ herrmann.bc_img_003 }}">
+                              </div>
+                              <div class="col-lg-2 col-md-4">
+                                <img src="{{ herrmann.bc_img_004 }}">
+                              </div>
+                              <div class="col-lg-2 col-md-4">
+                                <img src="{{ herrmann.bc_img_005 }}">
+                              </div>
+                              <div class="col-lg-2 col-md-4">
+                                <img src="{{ herrmann.bc_img_006 }}">
+                              </div>
+                              <div class="col-lg-2 col-md-4">
+                                <img src="{{ herrmann.bc_img_007 }}">
+                              </div>
+                              <div class="col-lg-2 col-md-4">
+                                <img src="{{ herrmann.bc_img_008 }}">
+                              </div>
+                              <div class="col-lg-2 col-md-4">
+                                <img src="{{ herrmann.bc_img_009 }}">
+                              </div>
+                              <div class="col-lg-2 col-md-4">
+                                <img src="{{ herrmann.bc_img_010 }}">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         {% endfor %}
+                  </div>
+                </div>
+              </div>    
+            </div>
+           
+        </div>
+    </section>
+    
+    <!-- End Features Area -->
+{% endblock  %}

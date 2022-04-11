@@ -1,0 +1,31 @@
+{% extends 'home.html' %}
+{% block content %}
+    <!-- Start Features Area -->
+    <section class="Features section">
+        <div class="container">
+            <div class="row">
+              
+                <div class="row col-lg-12 col-md-12 col-12">
+                  <div class="container">
+                    {% for herrmann in object_list %}
+                    <div style="padding-top: 1%;">
+                          <button style="background-color:rgba(13, 110, 252, 0)" class="btn btn-primary col-12" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample-{{ herrmann.id }}" aria-expanded="false" aria-controls="collapseExample">
+                            <h4>{{ herrmann.qa_tit }}</h4>
+                          </button>
+                    </div>
+                        <div style="margin:1%;" class="collapse" id="collapseExample-{{ herrmann.id }}">
+                          <div class="card card-body">
+                            {{ herrmann.qa_cont |safe }}
+                          </div>
+                        </div>
+                         {% endfor %}
+                  </div>
+                </div>
+              </div>    
+            </div>
+           
+        </div>
+    </section>
+    
+    <!-- End Features Area -->
+{% endblock  %}
