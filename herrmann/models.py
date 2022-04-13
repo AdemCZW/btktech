@@ -104,11 +104,11 @@ class mta_01(models.Model):
 	mta_seri_001_4 = RichTextField(max_length=1000000,default='文字敘述',blank=True, null=True,verbose_name = '內容')
 
 	def __str__(self):
-		return "metal-品項" + str(self.id) + " 號 "
+		return "對應超音波金屬熔接" + str(self.id) + " 號 "
 
 	class Meta:
-		verbose_name_plural = "metal-品項"
-		verbose_name = "metal-品項"
+		verbose_name_plural = "對應超音波金屬熔接"
+		verbose_name = "對應超音波金屬熔接"
 
 class sys_01(models.Model):
 	sys_tit = models.CharField(max_length=100000,verbose_name = '產品名稱', blank=True )
@@ -124,11 +124,11 @@ class sys_01(models.Model):
 	sys_seri_001_4 = RichTextField(max_length=1000000,default='文字敘述',blank=True, null=True,verbose_name = '內容')
 
 	def __str__(self):
-		return "application-應用" + str(self.id) + " 號 "
+		return "對應超音波集成系統" + str(self.id) + " 號 "
 
 	class Meta:
-		verbose_name_plural = "application-應用"
-		verbose_name = "application-應用"
+		verbose_name_plural = "對應超音波集成系統"
+		verbose_name = "對應超音波集成系統"
 
 class bc_01(models.Model):
 	bc_tit = models.CharField(max_length=100000,verbose_name = '產品名稱', blank=True )
