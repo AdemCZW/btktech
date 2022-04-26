@@ -175,4 +175,106 @@ class ca_01(models.Model):
 		verbose_name_plural = "contact-聯絡我們"
 		verbose_name = "contact-聯絡我們"
 
+class food_01(models.Model):
+	food_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
+	food_ctn = RichTextField(max_length=100000,verbose_name = '內容', blank=True )
+	food_pho_01 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	food_pho_02 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	food_pho_03 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	food_pho_04 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	food_pho_05 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	food_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	food_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	food_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	
+	def __str__(self):
+		return "Food" + str(self.id) 
+
+	class Meta:
+		verbose_name_plural = "Food"
+		verbose_name = "Food"
+
+class automation_01(models.Model):
+	automation_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
+	automation_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
+	automation_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	
+	def __str__(self):
+		return "automation" + str(self.id) 
+
+	class Meta:
+		verbose_name_plural = "automation"
+		verbose_name = "automation"
+
+class automotive_01(models.Model):
+	automotive_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
+	automotive_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
+	automotive_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	
+	def __str__(self):
+		return "automotive" + str(self.id) 
+
+	class Meta:
+		verbose_name_plural = "automotive"
+		verbose_name = "automotive"
+
+class hygiene_01(models.Model):
+	hygiene_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
+	hygiene_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
+	hygiene_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	
+	def __str__(self):
+		return "hygiene" + str(self.id) 
+
+	class Meta:
+		verbose_name_plural = "hygiene"
+		verbose_name = "hygiene"
+
+class medical_01(models.Model):
+	medical_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
+	medical_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
+	medical_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	
+	def __str__(self):
+		return "medical" + str(self.id) 
+
+	class Meta:
+		verbose_name_plural = "medical"
+		verbose_name = "medical"
+
+class electronics_01(models.Model):
+	electronics_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
+	electronics_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
+	electronics_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	
+	def __str__(self):
+		return "electronics" + str(self.id) 
+
+	class Meta:
+		verbose_name_plural = "electronics"
+		verbose_name = "electronics"
+
+class battery_01(models.Model):
+	battery_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
+	battery_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
+	battery_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	
+	def __str__(self):
+		return "battery" + str(self.id) 
+
+	class Meta:
+		verbose_name_plural = "battery"
+		verbose_name = "battery"
+
+class consumer_01(models.Model):
+	consumer_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
+	consumer_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
+	consumer_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	
+	def __str__(self):
+		return "consumer" + str(self.id) 
+
+	class Meta:
+		verbose_name_plural = "consumer"
+		verbose_name = "consumer"
 

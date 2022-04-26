@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate
 from django.utils.decorators import method_decorator
 from django.contrib import auth
-from .models import index_01, welding_01 ,welding_02, home, cpn_01 ,mta_01 ,sys_01 ,bc_01, qa_01, ca_01
+from .models import index_01, welding_01 ,welding_02, home, cpn_01 ,mta_01 ,sys_01 ,bc_01, qa_01, ca_01, food_01, automation_01, automotive_01, hygiene_01, medical_01, electronics_01, battery_01, consumer_01
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import (
     ListView,
@@ -55,6 +55,37 @@ class ca_01View(ListView):
     model = ca_01
     template_name = 'contact.html'  # 樣板路徑  
 
+class food_01View(ListView):
+    model = food_01
+    template_name = 'food.html'  # 樣板路徑 
+
+class automation_01View(ListView):
+    model = automation_01
+    template_name = 'automation.html'  # 樣板路徑 
+
+class automotive_01View(ListView):
+    model = automotive_01
+    template_name = 'automotive.html'  # 樣板路徑
+
+class hygiene_01View(ListView):
+    model = hygiene_01
+    template_name = 'hygiene.html'  # 樣板路徑 
+
+class medical_01View(ListView):
+    model = medical_01
+    template_name = 'medical.html'  # 樣板路徑 
+
+class electronics_01View(ListView):
+    model = electronics_01
+    template_name = 'electronics.html'  # 樣板路徑 
+
+class battery_01View(ListView):
+    model = battery_01
+    template_name = 'battery.html'  # 樣板路徑 
+
+class consumer_01View(ListView):
+    model = consumer_01
+    template_name = 'consumer.html'  # 樣板路徑 
 
 
 
