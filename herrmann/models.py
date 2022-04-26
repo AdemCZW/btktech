@@ -111,6 +111,7 @@ class mta_01(models.Model):
 	class Meta:
 		verbose_name_plural = "對應超音波金屬熔接"
 		verbose_name = "對應超音波金屬熔接"
+		ordering = ['id']
 
 class sys_01(models.Model):
 	sys_tit = models.CharField(max_length=100000,verbose_name = '產品名稱', blank=True )
@@ -131,6 +132,7 @@ class sys_01(models.Model):
 	class Meta:
 		verbose_name_plural = "對應超音波集成系統"
 		verbose_name = "對應超音波集成系統"
+		ordering = ['id']
 
 class bc_01(models.Model):
 	bc_tit = models.CharField(max_length=100000,verbose_name = '產品名稱', blank=True )
@@ -153,6 +155,7 @@ class bc_01(models.Model):
 	class Meta:
 		verbose_name_plural = "Branches-超音波應用"
 		verbose_name = "Branches-超音波應用"
+		ordering = ['id']
 
 class qa_01(models.Model):
 	qa_tit = models.CharField(max_length=100000,verbose_name = 'Ｑ:', blank=True )
@@ -164,6 +167,7 @@ class qa_01(models.Model):
 	class Meta:
 		verbose_name_plural = "QA"
 		verbose_name = "QA"
+		ordering = ['id']
 
 class ca_01(models.Model):
 	ca_phone = models.CharField(max_length=100000,verbose_name = '電話:', blank=True )
