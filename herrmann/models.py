@@ -90,6 +90,7 @@ class cpn_01(models.Model):
 	class Meta:
 		verbose_name_plural = "components-品項"
 		verbose_name = "components-品項"
+		ordering = ['id']
 
 class mta_01(models.Model):
 	mta_tit = models.CharField(max_length=100000,verbose_name = '產品名稱', blank=True )
