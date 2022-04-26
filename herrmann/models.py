@@ -69,6 +69,7 @@ class welding_02(models.Model):
 	class Meta:
 		verbose_name_plural = "welding-品項"
 		verbose_name = "welding-品項"
+		ordering = ['id']
 
 class cpn_01(models.Model):
 	cpn_tit = models.CharField(max_length=100000,verbose_name = '產品名稱', blank=True )
