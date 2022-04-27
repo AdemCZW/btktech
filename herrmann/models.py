@@ -202,8 +202,15 @@ class food_01(models.Model):
 
 class automation_01(models.Model):
 	automation_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
-	automation_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
-	automation_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automation_ctn = RichTextField(max_length=100000,verbose_name = '內容', blank=True )
+	automation_pho_01 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automation_pho_02 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automation_pho_03 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automation_pho_04 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automation_pho_05 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automation_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automation_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automation_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	
 	def __str__(self):
 		return "automation" + str(self.id) 
@@ -214,8 +221,15 @@ class automation_01(models.Model):
 
 class automotive_01(models.Model):
 	automotive_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
-	automotive_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
-	automotive_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automotive_ctn = RichTextField(max_length=100000,verbose_name = '內容', blank=True )
+	automotive_pho_01 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automotive_pho_02 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automotive_pho_03 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automotive_pho_04 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automotive_pho_05 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automotive_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automotive_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	automotive_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	
 	def __str__(self):
 		return "automotive" + str(self.id) 
@@ -226,8 +240,15 @@ class automotive_01(models.Model):
 
 class hygiene_01(models.Model):
 	hygiene_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
-	hygiene_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
-	hygiene_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	hygiene_ctn = RichTextField(max_length=100000,verbose_name = '內容', blank=True )
+	hygiene_pho_01 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	hygiene_pho_02 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	hygiene_pho_03 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	hygiene_pho_04 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	hygiene_pho_05 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	hygiene_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	hygiene_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	hygiene_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	
 	def __str__(self):
 		return "hygiene" + str(self.id) 
@@ -238,8 +259,15 @@ class hygiene_01(models.Model):
 
 class medical_01(models.Model):
 	medical_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
-	medical_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
-	medical_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	medical_ctn = RichTextField(max_length=100000,verbose_name = '內容', blank=True )
+	medical_pho_01 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	medical_pho_02 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	medical_pho_03 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	medical_pho_04 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	medical_pho_05 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	medical_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	medical_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	medical_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	
 	def __str__(self):
 		return "medical" + str(self.id) 
@@ -250,8 +278,15 @@ class medical_01(models.Model):
 
 class electronics_01(models.Model):
 	electronics_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
-	electronics_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
-	electronics_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	electronics_ctn = RichTextField(max_length=100000,verbose_name = '內容', blank=True )
+	electronics_pho_01 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	electronics_pho_02 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	electronics_pho_03 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	electronics_pho_04 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	electronics_pho_05 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	electronics_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	electronics_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	electronics_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	
 	def __str__(self):
 		return "electronics" + str(self.id) 
@@ -262,8 +297,15 @@ class electronics_01(models.Model):
 
 class battery_01(models.Model):
 	battery_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
-	battery_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
-	battery_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	battery_ctn = RichTextField(max_length=100000,verbose_name = '內容', blank=True )
+	battery_pho_01 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	battery_pho_02 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	battery_pho_03 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	battery_pho_04 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	battery_pho_05 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	battery_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	battery_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	battery_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	
 	def __str__(self):
 		return "battery" + str(self.id) 
@@ -274,8 +316,15 @@ class battery_01(models.Model):
 
 class consumer_01(models.Model):
 	consumer_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
-	consumer_ctn = models.CharField(max_length=100000,verbose_name = '內容', blank=True )
-	consumer_pho = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	consumer_ctn = RichTextField(max_length=100000,verbose_name = '內容', blank=True )
+	consumer_pho_01 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	consumer_pho_02 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	consumer_pho_03 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	consumer_pho_04 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	consumer_pho_05 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	consumer_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	consumer_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+	consumer_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	
 	def __str__(self):
 		return "consumer" + str(self.id) 
