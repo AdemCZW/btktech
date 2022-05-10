@@ -28,6 +28,19 @@ class index_01(models.Model):
 	mid_tit_006 = models.CharField(max_length=100000,verbose_name = '右下-標題', blank=True )
 	mid_txt_006 = models.CharField(max_length=100000,verbose_name = '右下', blank=True )
 
+	mid_tit_007 = models.CharField(max_length=100000,verbose_name = 'EN-左上-標題', blank=True )
+	mid_txt_007 = models.CharField(max_length=100000,verbose_name = 'EN-左上', blank=True )
+	mid_tit_008 = models.CharField(max_length=100000,verbose_name = 'EN-中上-標題', blank=True )
+	mid_txt_008 = models.CharField(max_length=100000,verbose_name = 'EN-中上', blank=True )
+	mid_tit_009 = models.CharField(max_length=100000,verbose_name = 'EN-右上-標題', blank=True )
+	mid_txt_009 = models.CharField(max_length=100000,verbose_name = 'EN-右上', blank=True )
+	mid_tit_010 = models.CharField(max_length=100000,verbose_name = 'EN-左下-標題', blank=True )
+	mid_txt_010 = models.CharField(max_length=100000,verbose_name = 'EN-左下', blank=True )
+	mid_tit_011 = models.CharField(max_length=100000,verbose_name = 'EN-中下-標題', blank=True )
+	mid_txt_011 = models.CharField(max_length=100000,verbose_name = 'EN-中下', blank=True )
+	mid_tit_012 = models.CharField(max_length=100000,verbose_name = 'EN-右下-標題', blank=True )
+	mid_txt_012 = models.CharField(max_length=100000,verbose_name = 'EN-右下', blank=True )
+
 	def __str__(self):
 		return "首頁"
 

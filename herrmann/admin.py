@@ -8,9 +8,17 @@ class home_Admin(admin.ModelAdmin):
 admin.site.register(home)	
 
 class index_01_Admin(admin.ModelAdmin):
-	list_display = ()
+	
+	fieldsets = (
+		['CH-Area', {
+            'fields': ('mid_tit_001', 'mid_txt_001','mid_tit_002', 'mid_txt_002','mid_tit_003', 'mid_txt_003','mid_tit_004', 'mid_txt_004','mid_tit_005', 'mid_txt_005','mid_tit_006', 'mid_txt_006'),
+        }],
+        ['EN-Area', {
+            'fields': ('mid_tit_007', 'mid_txt_007','mid_tit_008', 'mid_txt_008','mid_tit_009', 'mid_txt_009','mid_tit_010', 'mid_txt_010','mid_tit_011', 'mid_txt_011','mid_tit_012', 'mid_txt_012'),
+        }]
+    )
 
-admin.site.register(index_01)	
+admin.site.register(index_01, index_01_Admin)	
 
 class welding_02_Admin(admin.ModelAdmin):
 	list_display = ()

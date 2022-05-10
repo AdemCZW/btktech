@@ -80,32 +80,32 @@
 
                                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                   <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ herrmann.welding_seri_001_tit_01 }}</button>
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ herrmann.welding_seri_001_tit_01 }}</button>
                                   </li>
                                   <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ herrmann.welding_seri_001_tit_02 }}</button>
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ herrmann.welding_seri_001_tit_02 }}</button>
                                   </li>
                                   <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-logic-tab" data-bs-toggle="pill" data-bs-target="#pills-logic" type="button" role="tab" aria-controls="pills-logic" aria-selected="false">{{ herrmann.welding_seri_001_tit_03 }}</button>
+                                    <button class="nav-link" id="pills-logic-tab" data-bs-toggle="pill" data-bs-target="#pills-logic-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-logic" aria-selected="false">{{ herrmann.welding_seri_001_tit_03 }}</button>
                                   </li>
                                   <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-solid-tab" data-bs-toggle="pill" data-bs-target="#pills-solid" type="button" role="tab" aria-controls="pills-solid" aria-selected="false">{{ herrmann.welding_seri_001_tit_04 }}</button>
+                                    <button class="nav-link" id="pills-solid-tab" data-bs-toggle="pill" data-bs-target="#pills-solid-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-solid" aria-selected="false">{{ herrmann.welding_seri_001_tit_04 }}</button>
                                   </li>
                                 </ul>
                                 
                                 <div class="tab-content" id="pills-tabContent">
-                                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                  <div class="tab-pane fade show active" id="pills-home-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-home-tab">
                                     {{ herrmann.welding_seri_001_1|safe }}
                                 </div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="tab-pane fade" id="pills-profile-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
                                     {{ herrmann.welding_seri_001_2|safe }}
                                   </div>
                                 
-                                <div class="tab-pane fade" id="pills-logic" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="tab-pane fade" id="pills-logic-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
                                     {{ herrmann.welding_seri_001_3|safe }}
                                   </div>
                                 
-                                <div class="tab-pane fade" id="pills-solid" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="tab-pane fade" id="pills-solid-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
                                     {{ herrmann.welding_seri_001_4|safe }}
                                   </div>
                                 </div>
