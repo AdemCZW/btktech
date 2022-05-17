@@ -42,11 +42,11 @@ class index_01(models.Model):
 	mid_txt_012 = models.CharField(max_length=100000,verbose_name = 'EN-右下', blank=True )
 
 	def __str__(self):
-		return "首頁"
+		return "Home"
 
 	class Meta:
-		verbose_name_plural = "首頁"
-		verbose_name = "首頁"
+		verbose_name_plural = "Home"
+		verbose_name = "Home"
 
 class welding_01(models.Model):
 	welding_tit_001 = models.CharField(max_length=100000,verbose_name = '產品特色標題-1', blank=True )
@@ -76,12 +76,23 @@ class welding_02(models.Model):
 	welding_seri_001_tit_04 = models.CharField(max_length=100000,verbose_name = '產品系列-標題-4', blank=True )
 	welding_seri_001_4 = RichTextField(max_length=1000000,default='文字敘述',blank=True, null=True,verbose_name = '內容')
 
+	welding_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-產品名稱', blank=True )
+	welding_cont_en = RichTextField(max_length=100000,verbose_name = 'EN-主要產品說明', blank=True )
+	welding_img_001_en = models.CharField(max_length=100000,verbose_name = 'EN-產品圖片-1', blank=True )
+	welding_seri_001_tit_01_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-1', blank=True )
+	welding_seri_001_1_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	welding_seri_001_tit_02_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-2', blank=True )
+	welding_seri_001_2_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	welding_seri_001_tit_03_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-3', blank=True )
+	welding_seri_001_3_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	welding_seri_001_tit_04_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-4', blank=True )
+	welding_seri_001_4_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
 	def __str__(self):
-		return "welding-品項" + str(self.id) + " 號 "
+		return "welding" + str(self.id) + " 號 "
 
 	class Meta:
-		verbose_name_plural = "welding-品項"
-		verbose_name = "welding-品項"
+		verbose_name_plural = "welding"
+		verbose_name = "welding"
 		ordering = ['id']
 
 class cpn_01(models.Model):
@@ -97,12 +108,23 @@ class cpn_01(models.Model):
 	cpn_seri_001_tit_04 = models.CharField(max_length=100000,verbose_name = '產品系列-標題-4', blank=True )
 	cpn_seri_001_4 = RichTextField(max_length=1000000,default='文字敘述',blank=True, null=True,verbose_name = '內容')
 
+	cpn_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-EN-產品名稱', blank=True )
+	cpn_cont_en = RichTextField(max_length=100000,verbose_name = 'EN-主要產品說明', blank=True )
+	cpn_img_001_en = models.CharField(max_length=100000,verbose_name = 'EN-產品圖片-1', blank=True )
+	cpn_seri_001_tit_01_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-1', blank=True )
+	cpn_seri_001_1_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	cpn_seri_001_tit_02_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-2', blank=True )
+	cpn_seri_001_2_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	cpn_seri_001_tit_03_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-3', blank=True )
+	cpn_seri_001_3_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	cpn_seri_001_tit_04_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-4', blank=True )
+	cpn_seri_001_4_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
 	def __str__(self):
-		return "components-品項" + str(self.id) + " 號 "
+		return "components" + str(self.id) + " 號 "
 
 	class Meta:
-		verbose_name_plural = "components-品項"
-		verbose_name = "components-品項"
+		verbose_name_plural = "components"
+		verbose_name = "components"
 		ordering = ['id']
 
 class mta_01(models.Model):
@@ -118,12 +140,24 @@ class mta_01(models.Model):
 	mta_seri_001_tit_04 = models.CharField(max_length=100000,verbose_name = '產品系列-標題-4', blank=True )
 	mta_seri_001_4 = RichTextField(max_length=1000000,default='文字敘述',blank=True, null=True,verbose_name = '內容')
 
+	mta_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-產品名稱', blank=True )
+	mta_cont_en = RichTextField(max_length=100000,verbose_name = 'EN-主要產品說明', blank=True )
+	mta_img_001_en = models.CharField(max_length=100000,verbose_name = 'EN-產品圖片-1', blank=True )
+	mta_seri_001_tit_01_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-1', blank=True )
+	mta_seri_001_1_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	mta_seri_001_tit_02_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-2', blank=True )
+	mta_seri_001_2_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	mta_seri_001_tit_03_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-3', blank=True )
+	mta_seri_001_3_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	mta_seri_001_tit_04_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-4', blank=True )
+	mta_seri_001_4_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+
 	def __str__(self):
-		return "對應超音波金屬熔接" + str(self.id) + " 號 "
+		return "metal" + str(self.id) + " 號 "
 
 	class Meta:
-		verbose_name_plural = "對應超音波金屬熔接"
-		verbose_name = "對應超音波金屬熔接"
+		verbose_name_plural = "metal"
+		verbose_name = "metal"
 		ordering = ['id']
 
 class sys_01(models.Model):
@@ -139,35 +173,25 @@ class sys_01(models.Model):
 	sys_seri_001_tit_04 = models.CharField(max_length=100000,verbose_name = '產品系列-標題-4', blank=True )
 	sys_seri_001_4 = RichTextField(max_length=1000000,default='文字敘述',blank=True, null=True,verbose_name = '內容')
 
+	sys_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-產品名稱', blank=True )
+	sys_cont_en = RichTextField(max_length=100000,verbose_name = 'EN-主要產品說明', blank=True )
+	sys_img_001_en = models.CharField(max_length=100000,verbose_name = 'EN-產品圖片-1', blank=True )
+	sys_seri_001_tit_01_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-1', blank=True )
+	sys_seri_001_1_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	sys_seri_001_tit_02_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-2', blank=True )
+	sys_seri_001_2_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	sys_seri_001_tit_03_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-3', blank=True )
+	sys_seri_001_3_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+	sys_seri_001_tit_04_en = models.CharField(max_length=100000,verbose_name = 'EN-產品系列-標題-4', blank=True )
+	sys_seri_001_4_en = RichTextField(max_length=1000000,default='EN-文字敘述',blank=True, null=True,verbose_name = '內容')
+
+
 	def __str__(self):
-		return "對應超音波集成系統" + str(self.id) + " 號 "
+		return "system" + str(self.id) + " 號 "
 
 	class Meta:
-		verbose_name_plural = "對應超音波集成系統"
-		verbose_name = "對應超音波集成系統"
-		ordering = ['id']
-
-class bc_01(models.Model):
-	bc_tit = models.CharField(max_length=100000,verbose_name = '產品名稱', blank=True )
-	bc_cont = RichTextField(max_length=100000,verbose_name = '主要產品說明', blank=True )
-	bc_img_001 = models.CharField(max_length=100000,verbose_name = '產品圖片-1', blank=True )
-	bc_img_002 = models.CharField(max_length=100000,verbose_name = '產品圖片-1', blank=True )
-	bc_img_003 = models.CharField(max_length=100000,verbose_name = '產品圖片-1', blank=True )
-	bc_img_004 = models.CharField(max_length=100000,verbose_name = '產品圖片-1', blank=True )
-	bc_img_005 = models.CharField(max_length=100000,verbose_name = '產品圖片-1', blank=True )
-	bc_img_006 = models.CharField(max_length=100000,verbose_name = '產品圖片-1', blank=True )
-	bc_img_007 = models.CharField(max_length=100000,verbose_name = '產品圖片-1', blank=True )
-	bc_img_008 = models.CharField(max_length=100000,verbose_name = '產品圖片-1', blank=True )
-	bc_img_009 = models.CharField(max_length=100000,verbose_name = '產品圖片-1', blank=True )
-	bc_img_010 = models.CharField(max_length=100000,verbose_name = '產品圖片-1', blank=True )
-	
-	
-	def __str__(self):
-		return "Branches-超音波應用" + str(self.id) + " 號 "
-
-	class Meta:
-		verbose_name_plural = "Branches-超音波應用"
-		verbose_name = "Branches-超音波應用"
+		verbose_name_plural = "system"
+		verbose_name = "system"
 		ordering = ['id']
 
 class qa_01(models.Model):
@@ -205,6 +229,17 @@ class food_01(models.Model):
 	food_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	food_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	food_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+
+	food_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-標題', blank=True )
+	food_ctn_en = RichTextField(max_length=100000,verbose_name = 'EN-內容', blank=True )
+	food_pho_01_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	food_pho_02_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	food_pho_03_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	food_pho_04_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	food_pho_05_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	food_pho_06_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	food_pho_07_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	food_pho_08_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
 	
 	def __str__(self):
 		return "Food" + str(self.id) 
@@ -225,6 +260,17 @@ class automation_01(models.Model):
 	automation_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	automation_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	
+	automation_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-標題', blank=True )
+	automation_ctn_en = RichTextField(max_length=100000,verbose_name = 'EN-內容', blank=True )
+	automation_pho_01_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automation_pho_02_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automation_pho_03_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automation_pho_04_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automation_pho_05_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automation_pho_06_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automation_pho_07_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automation_pho_08_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	
 	def __str__(self):
 		return "automation" + str(self.id) 
 
@@ -244,6 +290,17 @@ class automotive_01(models.Model):
 	automotive_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	automotive_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	
+	automotive_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-標題', blank=True )
+	automotive_ctn_en = RichTextField(max_length=100000,verbose_name = 'EN-內容', blank=True )
+	automotive_pho_01_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automotive_pho_02_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automotive_pho_03_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automotive_pho_04_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automotive_pho_05_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automotive_pho_06_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automotive_pho_07_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	automotive_pho_08_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	
 	def __str__(self):
 		return "automotive" + str(self.id) 
 
@@ -262,6 +319,17 @@ class hygiene_01(models.Model):
 	hygiene_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	hygiene_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	hygiene_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+
+	hygiene_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-標題', blank=True )
+	hygiene_ctn_en = RichTextField(max_length=100000,verbose_name = 'EN-內容', blank=True )
+	hygiene_pho_01_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	hygiene_pho_02_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	hygiene_pho_03_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	hygiene_pho_04_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	hygiene_pho_05_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	hygiene_pho_06_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	hygiene_pho_07_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	hygiene_pho_08_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
 	
 	def __str__(self):
 		return "hygiene" + str(self.id) 
@@ -282,6 +350,17 @@ class medical_01(models.Model):
 	medical_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	medical_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	
+	medical_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-標題', blank=True )
+	medical_ctn_en = RichTextField(max_length=100000,verbose_name = 'EN-內容', blank=True )
+	medical_pho_01_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	medical_pho_02_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	medical_pho_03_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	medical_pho_04_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	medical_pho_05_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	medical_pho_06_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	medical_pho_07_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	medical_pho_08_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	
 	def __str__(self):
 		return "medical" + str(self.id) 
 
@@ -300,6 +379,17 @@ class electronics_01(models.Model):
 	electronics_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	electronics_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	electronics_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+
+	electronics_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-標題', blank=True )
+	electronics_ctn_en = RichTextField(max_length=100000,verbose_name = 'EN-內容', blank=True )
+	electronics_pho_01_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	electronics_pho_02_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	electronics_pho_03_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	electronics_pho_04_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	electronics_pho_05_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	electronics_pho_06_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	electronics_pho_07_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	electronics_pho_08_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
 	
 	def __str__(self):
 		return "electronics" + str(self.id) 
@@ -319,6 +409,17 @@ class battery_01(models.Model):
 	battery_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	battery_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	battery_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+
+	battery_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-標題', blank=True )
+	battery_ctn_en = RichTextField(max_length=100000,verbose_name = 'EN-內容', blank=True )
+	battery_pho_01_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	battery_pho_02_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	battery_pho_03_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	battery_pho_04_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	battery_pho_05_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	battery_pho_06_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	battery_pho_07_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	battery_pho_08_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
 	
 	def __str__(self):
 		return "battery" + str(self.id) 
@@ -338,6 +439,17 @@ class consumer_01(models.Model):
 	consumer_pho_06 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	consumer_pho_07 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
 	consumer_pho_08 = models.CharField(max_length=100000,verbose_name = '圖片', blank=True )
+
+	consumer_tit_en = models.CharField(max_length=100000,verbose_name = 'EN-標題', blank=True )
+	consumer_ctn_en = RichTextField(max_length=100000,verbose_name = 'EN-內容', blank=True )
+	consumer_pho_01_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	consumer_pho_02_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	consumer_pho_03_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	consumer_pho_04_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	consumer_pho_05_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	consumer_pho_06_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	consumer_pho_07_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
+	consumer_pho_08_en = models.CharField(max_length=100000,verbose_name = 'EN-圖片', blank=True )
 	
 	def __str__(self):
 		return "consumer" + str(self.id) 
