@@ -1,12 +1,6 @@
 from django.contrib import admin
 from .models import index_01 ,welding_02 ,home ,cpn_01 ,mta_01 ,sys_01 ,qa_01 ,ca_01, food_01, automation_01, automotive_01, hygiene_01, medical_01, electronics_01, battery_01, consumer_01
 
-
-class home_Admin(admin.ModelAdmin):
-	list_display = ()
-
-admin.site.register(home)	
-
 class index_01_Admin(admin.ModelAdmin):
 	
 	fieldsets = (

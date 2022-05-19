@@ -91,8 +91,8 @@ class welding_02(models.Model):
 		return "welding" + str(self.id) + " 號 "
 
 	class Meta:
-		verbose_name_plural = "welding"
-		verbose_name = "welding"
+		verbose_name_plural = "Ultrasonic Welding Machine"
+		verbose_name = "Ultrasonic Welding Machine"
 		ordering = ['id']
 
 class cpn_01(models.Model):
@@ -123,8 +123,8 @@ class cpn_01(models.Model):
 		return "components" + str(self.id) + " 號 "
 
 	class Meta:
-		verbose_name_plural = "components"
-		verbose_name = "components"
+		verbose_name_plural = "Ultrasonic Components"
+		verbose_name = "Ultrasonic Components"
 		ordering = ['id']
 
 class mta_01(models.Model):
@@ -156,8 +156,8 @@ class mta_01(models.Model):
 		return "metal" + str(self.id) + " 號 "
 
 	class Meta:
-		verbose_name_plural = "metal"
-		verbose_name = "metal"
+		verbose_name_plural = "Ultrasonic Welding Metal"
+		verbose_name = "Ultrasonic Welding Metal"
 		ordering = ['id']
 
 class sys_01(models.Model):
@@ -190,8 +190,8 @@ class sys_01(models.Model):
 		return "system" + str(self.id) + " 號 "
 
 	class Meta:
-		verbose_name_plural = "system"
-		verbose_name = "system"
+		verbose_name_plural = "Ultrasonic Welding system"
+		verbose_name = "Ultrasonic Welding system"
 		ordering = ['id']
 
 class qa_01(models.Model):
@@ -245,8 +245,8 @@ class food_01(models.Model):
 		return "Food" + str(self.id) 
 
 	class Meta:
-		verbose_name_plural = "Food"
-		verbose_name = "Food"
+		verbose_name_plural = "Branch-Food"
+		verbose_name = "Branch-Food"
 
 class automation_01(models.Model):
 	automation_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
@@ -275,8 +275,8 @@ class automation_01(models.Model):
 		return "automation" + str(self.id) 
 
 	class Meta:
-		verbose_name_plural = "automation"
-		verbose_name = "automation"
+		verbose_name_plural = "Branch-Automation"
+		verbose_name = "Branch-Automation"
 
 class automotive_01(models.Model):
 	automotive_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
@@ -305,8 +305,8 @@ class automotive_01(models.Model):
 		return "automotive" + str(self.id) 
 
 	class Meta:
-		verbose_name_plural = "automotive"
-		verbose_name = "automotive"
+		verbose_name_plural = "Branch-Automotive"
+		verbose_name = "Branch-Automotive"
 
 class hygiene_01(models.Model):
 	hygiene_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
@@ -335,8 +335,8 @@ class hygiene_01(models.Model):
 		return "hygiene" + str(self.id) 
 
 	class Meta:
-		verbose_name_plural = "hygiene"
-		verbose_name = "hygiene"
+		verbose_name_plural = "Branch-Hygiene"
+		verbose_name = "Branch-Hygiene"
 
 class medical_01(models.Model):
 	medical_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
@@ -365,8 +365,8 @@ class medical_01(models.Model):
 		return "medical" + str(self.id) 
 
 	class Meta:
-		verbose_name_plural = "medical"
-		verbose_name = "medical"
+		verbose_name_plural = "Branch-Medical"
+		verbose_name = "Branch-Medical"
 
 class electronics_01(models.Model):
 	electronics_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
@@ -395,8 +395,8 @@ class electronics_01(models.Model):
 		return "electronics" + str(self.id) 
 
 	class Meta:
-		verbose_name_plural = "electronics"
-		verbose_name = "electronics"
+		verbose_name_plural = "Branch-Electronics"
+		verbose_name = "Branch-Electronics"
 
 class battery_01(models.Model):
 	battery_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
@@ -425,8 +425,8 @@ class battery_01(models.Model):
 		return "battery" + str(self.id) 
 
 	class Meta:
-		verbose_name_plural = "battery"
-		verbose_name = "battery"
+		verbose_name_plural = "Branch-Battery"
+		verbose_name = "Branch-Battery"
 
 class consumer_01(models.Model):
 	consumer_tit = models.CharField(max_length=100000,verbose_name = '標題', blank=True )
@@ -455,6 +455,6 @@ class consumer_01(models.Model):
 		return "consumer" + str(self.id) 
 
 	class Meta:
-		verbose_name_plural = "consumer"
-		verbose_name = "consumer"
+		verbose_name_plural = "Branch-Consumer"
+		verbose_name = "Branch-Consumer"
 
