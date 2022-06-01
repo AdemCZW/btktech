@@ -9,6 +9,9 @@ class index_01_Admin(admin.ModelAdmin):
         }],
         ['EN-Area', {
             'fields': ('mid_tit_007', 'mid_txt_007','mid_tit_008', 'mid_txt_008','mid_tit_009', 'mid_txt_009','mid_tit_010', 'mid_txt_010','mid_tit_011', 'mid_txt_011','mid_tit_012', 'mid_txt_012'),
+        }],
+        ['SP-Area', {
+            'fields': ('mid_tit_013', 'mid_txt_013','mid_tit_014', 'mid_txt_014','mid_tit_015', 'mid_txt_015','mid_tit_016', 'mid_txt_016','mid_tit_017', 'mid_txt_017','mid_tit_018', 'mid_txt_018'),
         }]
     )
 
@@ -21,6 +24,9 @@ class welding_02_Admin(admin.ModelAdmin):
         }],
         ['EN-Area', {
             'fields': ('welding_tit_en', 'welding_cont_en','welding_img_001_en', 'welding_seri_001_tit_01_en','welding_seri_001_1_en', 'welding_seri_001_tit_02_en','welding_seri_001_2_en', 'welding_seri_001_tit_03_en','welding_seri_001_3_en', 'welding_seri_001_tit_04_en','welding_seri_001_4_en'),
+        }],
+        ['SP-Area', {
+            'fields': ('welding_tit_sp', 'welding_cont_sp','welding_img_001_sp', 'welding_seri_001_tit_01_sp','welding_seri_001_1_sp', 'welding_seri_001_tit_02_sp','welding_seri_001_2_sp', 'welding_seri_001_tit_03_sp','welding_seri_001_3_sp', 'welding_seri_001_tit_04_sp','welding_seri_001_4_sp'),
         }]
     )
 
@@ -34,6 +40,9 @@ class cpn_01_Admin(admin.ModelAdmin):
         }],
         ['EN-Area', {
             'fields': ('cpn_tit_en', 'cpn_cont_en','cpn_img_001_en', 'cpn_seri_001_tit_01_en','cpn_seri_001_1_en', 'cpn_seri_001_tit_02_en','cpn_seri_001_2_en', 'cpn_seri_001_tit_03_en','cpn_seri_001_3_en', 'cpn_seri_001_tit_04_en','cpn_seri_001_4_en'),
+        }],
+        ['SP-Area', {
+            'fields': ('cpn_tit_sp', 'cpn_cont_sp','cpn_img_001_sp', 'cpn_seri_001_tit_01_sp','cpn_seri_001_1_sp', 'cpn_seri_001_tit_02_sp','cpn_seri_001_2_sp', 'cpn_seri_001_tit_03_sp','cpn_seri_001_3_sp', 'cpn_seri_001_tit_04_sp','cpn_seri_001_4_sp'),
         }]
     )
 
@@ -46,6 +55,9 @@ class mta_01_Admin(admin.ModelAdmin):
         }],
         ['EN-Area', {
             'fields': ('mta_tit_en', 'mta_cont_en','mta_img_001_en', 'mta_seri_001_tit_01_en','mta_seri_001_1_en', 'mta_seri_001_tit_02_en','mta_seri_001_2_en', 'mta_seri_001_tit_03_en','mta_seri_001_3_en', 'mta_seri_001_tit_04_en','mta_seri_001_4_en'),
+        }],
+        ['SP-Area', {
+            'fields': ('mta_tit_sp', 'mta_cont_sp','mta_img_001_sp', 'mta_seri_001_tit_01_sp','mta_seri_001_1_sp', 'mta_seri_001_tit_02_sp','mta_seri_001_2_sp', 'mta_seri_001_tit_03_sp','mta_seri_001_3_sp', 'mta_seri_001_tit_04_sp','mta_seri_001_4_sp'),
         }]
     )
 
@@ -60,6 +72,9 @@ class sys_01_Admin(admin.ModelAdmin):
         }],
         ['EN-Area', {
             'fields': ('sys_tit_en', 'sys_cont_en','sys_img_001_en', 'sys_seri_001_tit_01_en','sys_seri_001_1_en', 'sys_seri_001_tit_02_en','sys_seri_001_2_en', 'sys_seri_001_tit_03_en','sys_seri_001_3_en', 'sys_seri_001_tit_04_en','sys_seri_001_4_en'),
+        }],
+        ['SP-Area', {
+            'fields': ('sys_tit_sp', 'sys_cont_sp','sys_img_001_sp', 'sys_seri_001_tit_01_sp','sys_seri_001_1_sp', 'sys_seri_001_tit_02_sp','sys_seri_001_2_sp', 'sys_seri_001_tit_03_sp','sys_seri_001_3_sp', 'sys_seri_001_tit_04_sp','sys_seri_001_4_sp'),
         }]
     )
 
@@ -85,6 +100,9 @@ class food_01_Admin(admin.ModelAdmin):
         ['EN-Area', {
             'fields': ('food_tit_en', 'food_ctn_en'),
         }],
+        ['SP-Area', {
+            'fields': ('food_tit_sp', 'food_ctn_sp'),
+        }],
         ['Photo', {
         	'fields': ('food_pho_01','food_pho_02','food_pho_03','food_pho_04','food_pho_05','food_pho_06','food_pho_07','food_pho_08' )
         }]
@@ -100,6 +118,9 @@ class automation_01_Admin(admin.ModelAdmin):
         }],
         ['EN-Area', {
             'fields': ('automation_tit_en', 'automation_ctn_en'),
+        }],
+        ['SP-Area', {
+            'fields': ('automation_tit_sp', 'automation_ctn_sp'),
         }],
         ['Photo', {
         	'fields': ('automation_pho_01','automation_pho_02','automation_pho_03','automation_pho_04','automation_pho_05','automation_pho_06','automation_pho_07','automation_pho_08' )
@@ -117,6 +138,9 @@ class automotive_01_Admin(admin.ModelAdmin):
         ['EN-Area', {
             'fields': ('automotive_tit_en', 'automotive_ctn_en'),
         }],
+        ['SP-Area', {
+            'fields': ('automotive_tit_sp', 'automotive_ctn_sp'),
+        }],
         ['Photo', {
         	'fields': ('automotive_pho_01','automotive_pho_02','automotive_pho_03','automotive_pho_04','automotive_pho_05','automotive_pho_06','automotive_pho_07','automotive_pho_08' )
         }]
@@ -132,6 +156,9 @@ class hygiene_01_Admin(admin.ModelAdmin):
         }],
         ['EN-Area', {
             'fields': ('hygiene_tit_en', 'hygiene_ctn_en'),
+        }],
+        ['SP-Area', {
+            'fields': ('hygiSPe_tit_sp', 'hygiSPe_ctn_sp'),
         }],
         ['Photo', {
         	'fields': ('hygiene_pho_01','hygiene_pho_02','hygiene_pho_03','hygiene_pho_04','hygiene_pho_05','hygiene_pho_06','hygiene_pho_07','hygiene_pho_08' )
@@ -149,6 +176,9 @@ class medical_01_Admin(admin.ModelAdmin):
         ['EN-Area', {
             'fields': ('medical_tit_en', 'medical_ctn_en'),
         }],
+        ['SP-Area', {
+            'fields': ('medical_tit_sp', 'medical_ctn_sp'),
+        }],
         ['Photo', {
         	'fields': ('medical_pho_01','medical_pho_02','medical_pho_03','medical_pho_04','medical_pho_05','medical_pho_06','medical_pho_07','medical_pho_08' )
         }]
@@ -164,6 +194,9 @@ class electronics_01_Admin(admin.ModelAdmin):
         }],
         ['EN-Area', {
             'fields': ('electronics_tit_en', 'electronics_ctn_en'),
+        }],
+        ['SP-Area', {
+            'fields': ('electronics_tit_sp', 'electronics_ctn_sp'),
         }],
         ['Photo', {
         	'fields': ('electronics_pho_01','electronics_pho_02','electronics_pho_03','electronics_pho_04','electronics_pho_05','electronics_pho_06','electronics_pho_07','electronics_pho_08' )
@@ -181,6 +214,9 @@ class battery_01_Admin(admin.ModelAdmin):
         ['EN-Area', {
             'fields': ('battery_tit_en', 'battery_ctn_en'),
         }],
+        ['SP-Area', {
+            'fields': ('battery_tit_sp', 'battery_ctn_sp'),
+        }],
         ['Photo', {
         	'fields': ('battery_pho_01','battery_pho_02','battery_pho_03','battery_pho_04','battery_pho_05','battery_pho_06','battery_pho_07','battery_pho_08' )
         }]
@@ -195,6 +231,9 @@ class consumer_01_Admin(admin.ModelAdmin):
         }],
         ['EN-Area', {
             'fields': ('consumer_tit_en', 'consumer_ctn_en'),
+        }],
+        ['SP-Area', {
+            'fields': ('consumer_tit_sp', 'consumer_ctn_sp'),
         }],
         ['Photo', {
         	'fields': ('consumer_pho_01','consumer_pho_02','consumer_pho_03','consumer_pho_04','consumer_pho_05','consumer_pho_06','consumer_pho_07','consumer_pho_08' )

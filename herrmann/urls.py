@@ -16,6 +16,7 @@ from .views import (
    automotive_01View,
    automation_01View,
    food_01View,
+
    IndexListView_en,
    Welding_01View_en,
    Welding_02View_en,
@@ -32,6 +33,23 @@ from .views import (
    automotive_01View_en,
    automation_01View_en,
    food_01View_en,
+
+   IndexListView_sp,
+   Welding_01View_sp,
+   Welding_02View_sp,
+   cpn_01View_sp,
+   mta_01View_sp,
+   sys_01View_sp,
+   qa_01View_sp,
+   ca_01View_sp,
+   consumer_01View_sp,
+   battery_01View_sp,
+   electronics_01View_sp,
+   medical_01View_sp,
+   hygiene_01View_sp,
+   automotive_01View_sp,
+   automation_01View_sp,
+   food_01View_sp,
 )
 
 app_name = 'herrmann'
@@ -68,4 +86,20 @@ urlpatterns = [
     path('en/mo', automotive_01View_en.as_view(), name="en-mo"),
     path('en/ma', automation_01View_en.as_view(), name="en-ma"),
     path('en/fo', food_01View_en.as_view(), name="en-fo"),
+
+    path('sp', IndexListView_sp.as_view(), name="sp"),
+    path('sp/welding', Welding_02View_sp.as_view(), name="sp-weld-2"),
+    path('sp/componspts', cpn_01View_sp.as_view(), name="sp-cpn"),
+    path('sp/metal', mta_01View_sp.as_view(), name="sp-mta"),
+    path('sp/system', sys_01View_sp.as_view(), name="sp-sys"),
+    path('sp/qa', qa_01View_sp.as_view(), name="sp-qa"),
+    path('sp/ca', ca_01View_sp.as_view(), name="sp-ca"),
+    path('sp/co', consumer_01View_sp.as_view(), name="sp-co"),
+    path('sp/ba', battery_01View_sp.as_view(), name="sp-ba"),
+    path('sp/el', electronics_01View_sp.as_view(), name="sp-el"),
+    path('sp/me', medical_01View_sp.as_view(), name="sp-me"),
+    path('sp/hy', hygiene_01View_sp.as_view(), name="sp-hy"),
+    path('sp/mo', automotive_01View_sp.as_view(), name="sp-mo"),
+    path('sp/ma', automation_01View_sp.as_view(), name="sp-ma"),
+    path('sp/fo', food_01View_sp.as_view(), name="sp-fo"),
 ]
