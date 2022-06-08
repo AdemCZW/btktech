@@ -16,6 +16,7 @@ from .views import (
    automotive_01View,
    automation_01View,
    food_01View,
+   About_ListView,
 
    IndexListView_en,
    Welding_01View_en,
@@ -33,6 +34,7 @@ from .views import (
    automotive_01View_en,
    automation_01View_en,
    food_01View_en,
+   About_ListView_en,
 
    IndexListView_sp,
    Welding_01View_sp,
@@ -50,6 +52,7 @@ from .views import (
    automotive_01View_sp,
    automation_01View_sp,
    food_01View_sp,
+   About_ListView_sp
 )
 
 app_name = 'herrmann'
@@ -70,6 +73,7 @@ urlpatterns = [
     path('mo', automotive_01View.as_view(), name="mo"),
     path('ma', automation_01View.as_view(), name="ma"),
     path('fo', food_01View.as_view(), name="fo"),
+    path('au', About_ListView.as_view(), name="au"),
 
     path('en', IndexListView_en.as_view(), name="en"),
     path('en/welding', Welding_02View_en.as_view(), name="en-weld-2"),
@@ -86,6 +90,7 @@ urlpatterns = [
     path('en/mo', automotive_01View_en.as_view(), name="en-mo"),
     path('en/ma', automation_01View_en.as_view(), name="en-ma"),
     path('en/fo', food_01View_en.as_view(), name="en-fo"),
+    path('en/au', About_ListView_en.as_view(), name="en-au"),
 
     path('sp', IndexListView_sp.as_view(), name="sp"),
     path('sp/welding', Welding_02View_sp.as_view(), name="sp-weld-2"),
@@ -102,4 +107,5 @@ urlpatterns = [
     path('sp/mo', automotive_01View_sp.as_view(), name="sp-mo"),
     path('sp/ma', automation_01View_sp.as_view(), name="sp-ma"),
     path('sp/fo', food_01View_sp.as_view(), name="sp-fo"),
+    path('sp/au', About_ListView_sp.as_view(), name="sp-au"),
 ]

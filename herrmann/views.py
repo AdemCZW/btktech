@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate
 from django.utils.decorators import method_decorator
 from django.contrib import auth
-from .models import index_01, welding_01 ,welding_02, home, cpn_01 ,mta_01 ,sys_01 , qa_01, ca_01, food_01, automation_01, automotive_01, hygiene_01, medical_01, electronics_01, battery_01, consumer_01
+from .models import index_01, welding_01 ,welding_02, home, cpn_01 ,mta_01 ,sys_01 , qa_01, ca_01, food_01, automation_01, automotive_01, hygiene_01, medical_01, electronics_01, battery_01, consumer_01, about_01
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import (
     ListView,
@@ -30,6 +30,18 @@ class IndexListView_en(ListView):
 class IndexListView_sp(ListView):
     model = index_01
     template_name = 'home_03.html'  # 樣板路徑  
+
+class About_ListView(ListView):
+    model = about_01
+    template_name = 'About.html'  # 樣板路徑  
+
+class About_ListView_en(ListView):
+    model = about_01
+    template_name = 'About_en.html'  # 樣板路徑  
+
+class About_ListView_sp(ListView):
+    model = about_01
+    template_name = 'About_sp.html'  # 樣板路徑  
 
 class Welding_01View(ListView):
     model = welding_01

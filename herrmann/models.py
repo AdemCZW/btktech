@@ -14,6 +14,20 @@ class home(models.Model):
 		verbose_name_plural = "基本資訊"
 		verbose_name = "基本資訊"
 
+class about_01(models.Model):
+	
+	about_txt_001 = RichTextField(max_length=100000,verbose_name = '內容', blank=True )
+	about_txt_001_en = RichTextField(max_length=100000,verbose_name = '內容', blank=True )
+	about_txt_001_sp = RichTextField(max_length=100000,verbose_name = '內容', blank=True )
+	
+	def __str__(self):
+		return "About"
+
+	class Meta:
+		verbose_name_plural = "About"
+		verbose_name = "About"
+
+
 class index_01(models.Model):
 	mid_tit_001 = models.CharField(max_length=100000,verbose_name = '左上-標題', blank=True )
 	mid_txt_001 = models.CharField(max_length=100000,verbose_name = '左上', blank=True )

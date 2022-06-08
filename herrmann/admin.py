@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import index_01 ,welding_02 ,home ,cpn_01 ,mta_01 ,sys_01 ,qa_01 ,ca_01, food_01, automation_01, automotive_01, hygiene_01, medical_01, electronics_01, battery_01, consumer_01
+from .models import index_01 ,welding_02 ,home ,cpn_01 ,mta_01 ,sys_01 ,qa_01 ,ca_01, food_01, automation_01, automotive_01, hygiene_01, medical_01, electronics_01, battery_01, consumer_01, about_01
 
 class index_01_Admin(admin.ModelAdmin):
 	
@@ -243,5 +243,19 @@ class consumer_01_Admin(admin.ModelAdmin):
 admin.site.register(consumer_01,consumer_01_Admin)	
 # Register your models here.
 
+class about_01_Admin(admin.ModelAdmin):
+    fieldsets = (
+        ['CH-Area', {
+            'fields': ('about_txt_001',),
+        }],
+        ['EN-Area', {
+            'fields': ('about_txt_001_en',),
+        }],
+        ['SP-Area', {
+            'fields': ('about_txt_001_sp',),
+        }]
+    )
+
+admin.site.register(about_01, about_01_Admin)
 
 
