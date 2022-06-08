@@ -33,15 +33,15 @@ class IndexListView_sp(ListView):
 
 class About_ListView(ListView):
     model = about_01
-    template_name = 'About.html'  # 樣板路徑  
+    template_name = 'about.html'  # 樣板路徑  
 
 class About_ListView_en(ListView):
     model = about_01
-    template_name = 'About_en.html'  # 樣板路徑  
+    template_name = 'about_en.html'  # 樣板路徑  
 
 class About_ListView_sp(ListView):
     model = about_01
-    template_name = 'About_sp.html'  # 樣板路徑  
+    template_name = 'about_sp.html'  # 樣板路徑  
 
 class Welding_01View(ListView):
     model = welding_01
