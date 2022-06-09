@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
 
-    'herrmannbily.herokuapp.com','127.0.0.1'
+    'herrmannbily.herokuapp.com','127.0.0.1','btktech.com.tw','wwww.btktech.com.tw'
 
 ]
 
