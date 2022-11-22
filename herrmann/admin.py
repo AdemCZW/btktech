@@ -158,7 +158,7 @@ class hygiene_01_Admin(admin.ModelAdmin):
             'fields': ('hygiene_tit_en', 'hygiene_ctn_en'),
         }],
         ['SP-Area', {
-            'fields': ('hygiSPe_tit_sp', 'hygiSPe_ctn_sp'),
+            'fields': ('hygiene_tit_sp', 'hygiene_ctn_sp'),
         }],
         ['Photo', {
         	'fields': ('hygiene_pho_01','hygiene_pho_02','hygiene_pho_03','hygiene_pho_04','hygiene_pho_05','hygiene_pho_06','hygiene_pho_07','hygiene_pho_08' )
