@@ -1,131 +1,129 @@
-{% extends 'home_en.html' %}
-{% block content %}
-    <!-- Start Features Area -->
-    <section class="Features section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-12">
-                    <div class="feature-content">
-                        <div class="title">
-                            <span class="wow fadeInRight" data-wow-delay=".3s">Ultrasonic welding systems for easy integration</span>
-                            <h3 class="wow fadeInRight" data-wow-delay=".5s">Ultrasonic for Integration</h3>
+{% extends 'home_en.html' %} {% block content %}
+<!-- Start Features Area -->
+<section class="Features section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="feature-content">
+                    <div class="title">
+                        <span class="wow fadeInRight" data-wow-delay=".3s">Ultrasonic welding systems for easy integration</span>
+                        <h3 class="wow fadeInRight" data-wow-delay=".5s">Ultrasonic for Integration</h3>
+                    </div>
+                    <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
+                        <div class="feature-thumb">
+                            <i class="lni lni-arrow-right-circle"></i>
                         </div>
-                        <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
-                            <div class="feature-thumb">
-                                <i class="lni lni-arrow-right-circle"></i>
-                            </div>
-                            <div class="banner-content" style="padding-top: 2%;">
-                                <h2 class="title">Ultrasonic for easy Integration
-                                </h2>
-                                <p>
-                                    The demand of the production industry for complex and efficient automation systems is constantly increasing. Herrmann offers a wide range of solutions for ultrasonic system integration. The basis is therefore sound ultrasonic expert knowledge and a modern product portfolio: From system integration and smooth start-up production assistance and professional operator training – Herrmann Ultrasonics provides the general prerequisites for safe process-related implementation of a flexible automation system. 
-                                </p>
-                            </div>
+                        <div class="banner-content" style="padding-top: 2%;">
+                            <h2 class="title">Ultrasonic for easy Integration
+                            </h2>
+                            <p>
+                                The demand of the production industry for complex and efficient automation systems is constantly increasing. Herrmann offers a wide range of solutions for ultrasonic system integration. The basis is therefore sound ultrasonic expert knowledge and a modern
+                                product portfolio: From system integration and smooth start-up production assistance and professional operator training – Herrmann Ultrasonics provides the general prerequisites for safe process-related implementation of
+                                a flexible automation system.
+                            </p>
                         </div>
-                        <div class="feature-item wow fadeInUp" data-wow-delay=".6s">
-                            <div class="feature-thumb">
-                                <i class="lni lni-arrow-right-circle"></i>
-                            </div>
-                            <div class="banner-content" style="padding-top: 2%;">
-                                <h2 class="title">
-                                    Advantage of Herrmann ultrasonic weld systems<br>
-                                    All weld systems in the HiQ modular, MPW product line and weld systems such as the actuators VE SLIMLINE or VE COMPACTLINE are characterized by:
+                    </div>
+                    <div class="feature-item wow fadeInUp" data-wow-delay=".6s">
+                        <div class="feature-thumb">
+                            <i class="lni lni-arrow-right-circle"></i>
+                        </div>
+                        <div class="banner-content" style="padding-top: 2%;">
+                            <h2 class="title">
+                                Advantage of Herrmann ultrasonic weld systems<br> All weld systems in the HiQ modular, MPW product line and weld systems such as the actuators VE SLIMLINE or VE COMPACTLINE are characterized by:
 
-                                </h2>
-                                <p>
-                                    ◉ Proven technology from the series machine field for automation <br>
-                                    ◉ Weld process controllers allow optimal weld results <br>
-                                    ◉ Individually configurable to suit requirements <br>
-                                    ◉ Robust and reliable in continuous operation<br>
-                                    ◉ All-round application development consulting - APPLICATION ENGINEERING <br>
-                                </p>
-                            </div>
+                            </h2>
+                            <p>
+                                ◉ Proven technology from the series machine field for automation <br> ◉ Weld process controllers allow optimal weld results <br> ◉ Individually configurable to suit requirements <br> ◉ Robust and reliable in continuous
+                                operation<br> ◉ All-round application development consulting - APPLICATION ENGINEERING <br>
+                            </p>
                         </div>
-                        <div class="feature-item wow fadeInUp" data-wow-delay=".7s">
-                            <div class="feature-thumb">
-                                <i class="lni lni-arrow-right-circle"></i>
-                            </div>
-                            <div class="banner-content" style="padding-top: 2%;">
-                                <h2 class="title">
-                                    Possible applications for ultrasonic welding systems
+                    </div>
+                    <div class="feature-item wow fadeInUp" data-wow-delay=".7s">
+                        <div class="feature-thumb">
+                            <i class="lni lni-arrow-right-circle"></i>
+                        </div>
+                        <div class="banner-content" style="padding-top: 2%;">
+                            <h2 class="title">
+                                Possible applications for ultrasonic welding systems
 
-                                </h2>
-                                <p>
-                                   Herrmann provides standard actuators, HiQ, and HiS modules that offer a high level of flexibility that can be easily adapted to individual customer requirements. The modular system offers extensive integration solutions for machine builders and the automation industry. Be it for automation system or for robot solutions: Each ultrasonic welding system forms a functional unit, allowing ease of integration and start-up. The ultrasonic welding systems are successfully used in the plastics and LI battery industries. 
-                                </p>
+                            </h2>
+                            <p>
+                                Herrmann provides standard actuators, HiQ, and HiS modules that offer a high level of flexibility that can be easily adapted to individual customer requirements. The modular system offers extensive integration solutions for machine builders and the automation
+                                industry. Be it for automation system or for robot solutions: Each ultrasonic welding system forms a functional unit, allowing ease of integration and start-up. The ultrasonic welding systems are successfully used in the
+                                plastics and LI battery industries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-lg-12 col-md-12 col-12">
+                {% for herrmann in object_list %}
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <!-- Button trigger modal -->
+                    <span type="button" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ herrmann.id }}">
+                            <img src="{{ herrmann.sys_img_001 }}">
+                        </span>
+                    <h5>{{ herrmann.sys_tit_en }}</h5>
+                </div>
+                {% endfor %} {% for herrmann in object_list %}
+                <!-- Modal -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="modal fade" id="exampleModal-{{ herrmann.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel exampleModal">{{ herrmann.sys_tit_en }}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    {{ herrmann.sys_cont_en |safe }}
+
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ herrmann.sys_seri_001_tit_01_en }}</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ herrmann.sys_seri_001_tit_02_en }}</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-logic-tab" data-bs-toggle="pill" data-bs-target="#pills-logic-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-logic" aria-selected="false">{{ herrmann.sys_seri_001_tit_03_en }}</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-solid-tab" data-bs-toggle="pill" data-bs-target="#pills-solid-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-solid" aria-selected="false">{{ herrmann.sys_seri_001_tit_04_en }}</button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            {{ herrmann.sys_seri_001_1_en|safe }}
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            {{ herrmann.sys_seri_001_2_en|safe }}
+                                        </div>
+
+                                        <div class="tab-pane fade" id="pills-logic-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            {{ herrmann.sys_seri_001_3_en|safe }}
+                                        </div>
+
+                                        <div class="tab-pane fade" id="pills-solid-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            {{ herrmann.sys_seri_001_4_en|safe }}
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row col-lg-12 col-md-12 col-12">
-                    {% for herrmann in object_list %}
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <!-- Button trigger modal -->
-                        <span type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ herrmann.id }}">
-                            <img src="{{ herrmann.sys_img_001 }}">
-                        </span>
-                        <h5>{{ herrmann.sys_tit_en }}</h5>
-                    </div>    
-                    {% endfor %}
-                    {% for herrmann in object_list %}
-                        <!-- Modal -->
-                        <div class="col-lg-6 col-md-6">
-                        <div class="modal fade" id="exampleModal-{{ herrmann.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel exampleModal">{{ herrmann.sys_tit_en }}</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                {{ herrmann.sys_cont_en |safe }}
-
-                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ herrmann.sys_seri_001_tit_01_en }}</button>
-                                  </li>
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ herrmann.sys_seri_001_tit_02_en }}</button>
-                                  </li>
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-logic-tab" data-bs-toggle="pill" data-bs-target="#pills-logic-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-logic" aria-selected="false">{{ herrmann.sys_seri_001_tit_03_en }}</button>
-                                  </li>
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-solid-tab" data-bs-toggle="pill" data-bs-target="#pills-solid-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-solid" aria-selected="false">{{ herrmann.sys_seri_001_tit_04_en }}</button>
-                                  </li>
-                                </ul>
-                                
-                                <div class="tab-content" id="pills-tabContent">
-                                  <div class="tab-pane fade show active" id="pills-home-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-home-tab">
-                                    {{ herrmann.sys_seri_001_1_en|safe }}
-                                </div>
-                                <div class="tab-pane fade" id="pills-profile-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    {{ herrmann.sys_seri_001_2_en|safe }}
-                                  </div>
-                                
-                                <div class="tab-pane fade" id="pills-logic-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    {{ herrmann.sys_seri_001_3_en|safe }}
-                                  </div>
-                                
-                                <div class="tab-pane fade" id="pills-solid-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    {{ herrmann.sys_seri_001_4_en|safe }}
-                                  </div>
-                                </div>
-                               
-
-
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                     {% endfor %}
+                {% endfor %}
             </div>
         </div>
-    </section>
-    
-    <!-- End Features Area -->
-{% endblock  %}
+</section>
+
+<!-- End Features Area -->
+{% endblock %}

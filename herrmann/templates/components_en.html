@@ -1,115 +1,113 @@
-{% extends 'home_en.html' %}
-{% block content %}
-    <!-- Start Features Area -->
-    <section class="Features section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-12">
-                    <div class="feature-content">
-                        <div class="title">
-                            <span class="wow fadeInRight" data-wow-delay=".3s">Ultrasonic Engineering components</span>
-                            <h3 class="wow fadeInRight" data-wow-delay=".5s">Ultrasonic welding components</h3>
+{% extends 'home_en.html' %} {% block content %}
+<!-- Start Features Area -->
+<section class="Features section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="feature-content">
+                    <div class="title">
+                        <span class="wow fadeInRight" data-wow-delay=".3s">Ultrasonic Engineering components</span>
+                        <h3 class="wow fadeInRight" data-wow-delay=".5s">Ultrasonic welding components</h3>
+                    </div>
+                    <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
+                        <div class="feature-thumb">
+                            <i class="lni lni-arrow-right-circle"></i>
                         </div>
-                        <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
-                            <div class="feature-thumb">
-                                <i class="lni lni-arrow-right-circle"></i>
-                            </div>
-                            <div class="banner-content" style="padding-top: 2%;">
-                                <h2 class="title">Ultrasonic welding components
-                                </h2>
-                                <p> Ultrasonic welding technology is gaining in importance and is an increasingly frequent integral component in modern manufacturing processes. As an efficient, material-friendly and sustainable joining technique, it is ideally suited for joining thermoplastics or non-ferrous metals. Many mechanical engineering components use this technology advantage when processing plastics or metals in customized machines. Robust and reliable ultrasonic components are a requirement for this. Linked together on a mechanical basis, the converter, booster, and sonotrode create an ultrasonic stack with a determined acoustic resonance. All of the ultrasonic components we provide receive a 100% quality check: ‘’Made in Germany’’. </p>
-                            </div>
+                        <div class="banner-content" style="padding-top: 2%;">
+                            <h2 class="title">Ultrasonic welding components
+                            </h2>
+                            <p> Ultrasonic welding technology is gaining in importance and is an increasingly frequent integral component in modern manufacturing processes. As an efficient, material-friendly and sustainable joining technique, it is ideally
+                                suited for joining thermoplastics or non-ferrous metals. Many mechanical engineering components use this technology advantage when processing plastics or metals in customized machines. Robust and reliable ultrasonic components
+                                are a requirement for this. Linked together on a mechanical basis, the converter, booster, and sonotrode create an ultrasonic stack with a determined acoustic resonance. All of the ultrasonic components we provide receive
+                                a 100% quality check: ‘’Made in Germany’’. </p>
                         </div>
-                        <div class="feature-item wow fadeInUp" data-wow-delay=".6s">
-                            <div class="feature-thumb">
-                                <i class="lni lni-arrow-right-circle"></i>
-                            </div>
-                            <div class="banner-content" style="padding-top: 2%;">
-                                <h2 class="title">Advantage of Herrmann ultrasonic weld components
-                                Generators, converters, ultrasonic sonotrodes 
-                                <br>– all of the ultrasonic components stand out with: 
-                                </h2>
-                                <p>
-                                   ◉ Robust designs for the prevention of costly manufacturing downtimes <br>
-                                   ◉ Easy integration thanks to the modularity of the components <br>
-                                   ◉ Short standstill times with the replacement of components<br>
-                                   ◉ Tried and tested quality with long availability of spare parts <br>
-                                </p>
+                    </div>
+                    <div class="feature-item wow fadeInUp" data-wow-delay=".6s">
+                        <div class="feature-thumb">
+                            <i class="lni lni-arrow-right-circle"></i>
+                        </div>
+                        <div class="banner-content" style="padding-top: 2%;">
+                            <h2 class="title">Advantage of Herrmann ultrasonic weld components Generators, converters, ultrasonic sonotrodes
+                                <br>– all of the ultrasonic components stand out with:
+                            </h2>
+                            <p>
+                                ◉ Robust designs for the prevention of costly manufacturing downtimes <br> ◉ Easy integration thanks to the modularity of the components <br> ◉ Short standstill times with the replacement of components<br> ◉ Tried and tested
+                                quality with long availability of spare parts <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row col-lg-12 col-md-12 col-12">
+                {% for herrmann in object_list %}
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <!-- Button trigger modal -->
+                    <span type="button" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ herrmann.id }}">
+                            <img src="{{ herrmann.cpn_img_001_en }}">
+                        </span>
+                    <h5>{{ herrmann.cpn_tit_en }}</h5>
+                </div>
+                {% endfor %} {% for herrmann in object_list %}
+                <!-- Modal -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="modal fade" id="exampleModal-{{ herrmann.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel exampleModal">{{ herrmann.cpn_tit_en }}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    {{ herrmann.cpn_cont |safe }}
+
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ herrmann.cpn_seri_001_tit_01_en }}</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ herrmann.cpn_seri_001_tit_02_en }}</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-logic-tab" data-bs-toggle="pill" data-bs-target="#pills-logic-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-logic" aria-selected="false">{{ herrmann.cpn_seri_001_tit_03_en }}</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-solid-tab" data-bs-toggle="pill" data-bs-target="#pills-solid-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-solid" aria-selected="false">{{ herrmann.cpn_seri_001_tit_04_en }}</button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            {{ herrmann.cpn_seri_001_1_en|safe }}
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            {{ herrmann.cpn_seri_001_2_en|safe }}
+                                        </div>
+
+                                        <div class="tab-pane fade" id="pills-logic-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            {{ herrmann.cpn_seri_001_3_en|safe }}
+                                        </div>
+
+                                        <div class="tab-pane fade" id="pills-solid-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            {{ herrmann.cpn_seri_001_4_en|safe }}
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-
-                <div class="row col-lg-12 col-md-12 col-12">
-                    {% for herrmann in object_list %}
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <!-- Button trigger modal -->
-                        <span type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ herrmann.id }}">
-                            <img src="{{ herrmann.cpn_img_001_en }}">
-                        </span>
-                        <h5>{{ herrmann.cpn_tit_en }}</h5>
-                    </div>    
-                    {% endfor %}
-                    {% for herrmann in object_list %}
-                        <!-- Modal -->
-                        <div class="col-lg-6 col-md-6">
-                        <div class="modal fade" id="exampleModal-{{ herrmann.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel exampleModal">{{ herrmann.cpn_tit_en }}</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                {{ herrmann.cpn_cont |safe }}
-
-                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ herrmann.cpn_seri_001_tit_01_en }}</button>
-                                  </li>
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ herrmann.cpn_seri_001_tit_02_en }}</button>
-                                  </li>
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-logic-tab" data-bs-toggle="pill" data-bs-target="#pills-logic-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-logic" aria-selected="false">{{ herrmann.cpn_seri_001_tit_03_en }}</button>
-                                  </li>
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-solid-tab" data-bs-toggle="pill" data-bs-target="#pills-solid-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-solid" aria-selected="false">{{ herrmann.cpn_seri_001_tit_04_en }}</button>
-                                  </li>
-                                </ul>
-                                
-                                <div class="tab-content" id="pills-tabContent">
-                                  <div class="tab-pane fade show active" id="pills-home-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-home-tab">
-                                    {{ herrmann.cpn_seri_001_1_en|safe }}
-                                </div>
-                                <div class="tab-pane fade" id="pills-profile-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    {{ herrmann.cpn_seri_001_2_en|safe }}
-                                  </div>
-                                
-                                <div class="tab-pane fade" id="pills-logic-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    {{ herrmann.cpn_seri_001_3_en|safe }}
-                                  </div>
-                                
-                                <div class="tab-pane fade" id="pills-solid-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    {{ herrmann.cpn_seri_001_4_en|safe }}
-                                  </div>
-                                </div>
-                               
-
-
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                     {% endfor %}
+                {% endfor %}
             </div>
         </div>
-    </section>
-    
-    <!-- End Features Area -->
-{% endblock  %}
+</section>
+
+<!-- End Features Area -->
+{% endblock %}

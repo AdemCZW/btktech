@@ -1,115 +1,113 @@
-{% extends 'home_sp.html' %}
-{% block content %}
-    <!-- Start Features Area -->
-    <section class="Features section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-12">
-                    <div class="feature-content">
-                        <div class="title">
-                            <span class="wow fadeInRight" data-wow-delay=".3s">Ultrasonic Metal Welding Machines</span>
-                            <h3 class="wow fadeInRight" data-wow-delay=".5s">Ultrasonic for Metal welding machine</h3>
+{% extends 'home_sp.html' %} {% block content %}
+<!-- Start Features Area -->
+<section class="Features section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="feature-content">
+                    <div class="title">
+                        <span class="wow fadeInRight" data-wow-delay=".3s">Ultrasonic Metal Welding Machines</span>
+                        <h3 class="wow fadeInRight" data-wow-delay=".5s">Ultrasonic for Metal welding machine</h3>
+                    </div>
+                    <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
+                        <div class="feature-thumb">
+                            <i class="lni lni-arrow-right-circle"></i>
                         </div>
-                        <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
-                            <div class="feature-thumb">
-                                <i class="lni lni-arrow-right-circle"></i>
-                            </div>
-                            <div class="banner-content" style="padding-top: 2%;">
-                                <h2 class="title">Metal welding 
+                        <div class="banner-content" style="padding-top: 2%;">
+                            <h2 class="title">Metal welding
 
-                                </h2>
-                                <p> Metal welding is used in the automotive and electronics industries to produce batteries, cable connections, etc. In metal welding, metals are welded in high temperatures, for instance. We differentiate between metal active gas (MAG) and metal inert gas (MIG) welding. Active gases from a connection with the metal, inert gases do not. In ultrasonic welding, ultrasonic waves are used to join the metals. </p>
-                            </div>
+                            </h2>
+                            <p> Metal welding is used in the automotive and electronics industries to produce batteries, cable connections, etc. In metal welding, metals are welded in high temperatures, for instance. We differentiate between metal active
+                                gas (MAG) and metal inert gas (MIG) welding. Active gases from a connection with the metal, inert gases do not. In ultrasonic welding, ultrasonic waves are used to join the metals. </p>
                         </div>
-                        <div class="feature-item wow fadeInUp" data-wow-delay=".6s">
-                            <div class="feature-thumb">
-                                <i class="lni lni-arrow-right-circle"></i>
-                            </div>
-                            <div class="banner-content" style="padding-top: 2%;">
-                                <h2 class="title">
-                                    Advantages of metal welding using ultrasonics
-                                    <br>Ultrasonic welding offers numerous advantages over conventional metal welding:
-                                </h2>
-                                <p>
-                                    ◉ Environment friendly: The weld process requires less energy compared to classic types of metal welding. <br>
-                                    ◉ Precise: Ultrasonic welding is precise. This is important above all when welding very small metal parts, e.g. in batteries. <br>
-                                    ◉ Gentle: Ultrasonic welding works without extremely hot temperatures. This ensures that the metal and other materials are not damaged.<br>
-                                    ◉ Cost efficient: Ultrasonic welding is fast and does not require any additional tools such as solder. 
+                    </div>
+                    <div class="feature-item wow fadeInUp" data-wow-delay=".6s">
+                        <div class="feature-thumb">
+                            <i class="lni lni-arrow-right-circle"></i>
+                        </div>
+                        <div class="banner-content" style="padding-top: 2%;">
+                            <h2 class="title">
+                                Advantages of metal welding using ultrasonics
+                                <br>Ultrasonic welding offers numerous advantages over conventional metal welding:
+                            </h2>
+                            <p>
+                                ◉ Environment friendly: The weld process requires less energy compared to classic types of metal welding. <br> ◉ Precise: Ultrasonic welding is precise. This is important above all when welding very small metal parts, e.g.
+                                in batteries. <br> ◉ Gentle: Ultrasonic welding works without extremely hot temperatures. This ensures that the metal and other materials are not damaged.<br> ◉ Cost efficient: Ultrasonic welding is fast and does not require
+                                any additional tools such as solder.
 
-                                </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-lg-12 col-md-12 col-12">
+                {% for herrmann in object_list %}
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <!-- Button trigger modal -->
+                    <span type="button" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ herrmann.id }}">
+                            <img src="{{ herrmann.mta_img_001_sp }}">
+                        </span>
+                    <h5>{{ herrmann.mta_tit_sp }}</h5>
+                </div>
+                {% endfor %} {% for herrmann in object_list %}
+                <!-- Modal -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="modal fade" id="exampleModal-{{ herrmann.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel exampleModal">{{ herrmann.mta_tit_sp }}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    {{ herrmann.mta_cont_sp |safe }}
+
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ herrmann.mta_seri_001_tit_01_sp }}</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ herrmann.mta_seri_001_tit_02_sp }}</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-logic-tab" data-bs-toggle="pill" data-bs-target="#pills-logic-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-logic" aria-selected="false">{{ herrmann.mta_seri_001_tit_03_sp }}</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-solid-tab" data-bs-toggle="pill" data-bs-target="#pills-solid-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-solid" aria-selected="false">{{ herrmann.mta_seri_001_tit_04_sp }}</button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            {{ herrmann.mta_seri_001_1_sp|safe }}
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            {{ herrmann.mta_seri_001_2_sp|safe }}
+                                        </div>
+
+                                        <div class="tab-pane fade" id="pills-logic-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            {{ herrmann.mta_seri_001_3_sp|safe }}
+                                        </div>
+
+                                        <div class="tab-pane fade" id="pills-solid-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            {{ herrmann.mta_seri_001_4_sp|safe }}
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row col-lg-12 col-md-12 col-12">
-                    {% for herrmann in object_list %}
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <!-- Button trigger modal -->
-                        <span type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ herrmann.id }}">
-                            <img src="{{ herrmann.mta_img_001_sp }}">
-                        </span>
-                        <h5>{{ herrmann.mta_tit_sp }}</h5>
-                    </div>    
-                    {% endfor %}
-                    {% for herrmann in object_list %}
-                        <!-- Modal -->
-                        <div class="col-lg-6 col-md-6">
-                        <div class="modal fade" id="exampleModal-{{ herrmann.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel exampleModal">{{ herrmann.mta_tit_sp }}</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                {{ herrmann.mta_cont_sp |safe }}
-
-                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ herrmann.mta_seri_001_tit_01_sp }}</button>
-                                  </li>
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ herrmann.mta_seri_001_tit_02_sp }}</button>
-                                  </li>
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-logic-tab" data-bs-toggle="pill" data-bs-target="#pills-logic-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-logic" aria-selected="false">{{ herrmann.mta_seri_001_tit_03_sp }}</button>
-                                  </li>
-                                  <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-solid-tab" data-bs-toggle="pill" data-bs-target="#pills-solid-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-solid" aria-selected="false">{{ herrmann.mta_seri_001_tit_04_sp }}</button>
-                                  </li>
-                                </ul>
-                                
-                                <div class="tab-content" id="pills-tabContent">
-                                  <div class="tab-pane fade show active" id="pills-home-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-home-tab">
-                                    {{ herrmann.mta_seri_001_1_sp|safe }}
-                                </div>
-                                <div class="tab-pane fade" id="pills-profile-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    {{ herrmann.mta_seri_001_2_sp|safe }}
-                                  </div>
-                                
-                                <div class="tab-pane fade" id="pills-logic-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    {{ herrmann.mta_seri_001_3_sp|safe }}
-                                  </div>
-                                
-                                <div class="tab-pane fade" id="pills-solid-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    {{ herrmann.mta_seri_001_4_sp|safe }}
-                                  </div>
-                                </div>
-                               
-
-
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                     {% endfor %}
+                {% endfor %}
             </div>
         </div>
-    </section>
-    
-    <!-- End Features Area -->
-{% endblock  %}
+</section>
+
+<!-- End Features Area -->
+{% endblock %}
