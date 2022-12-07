@@ -2464,3 +2464,26 @@ p {
 .free-version-banner .button .btn .dir-part {
   background-color: #333;
 }
+
+.full-video {
+  position: ;
+  top: 0px;
+  left: 0px;
+}
+
+.text-video {
+  position: absolute;
+  z-index: 9;
+  top: 35%;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+}
+
+.small-title {
+  color: #fff;
+  background: #3e54ff;
+  font-size: 15px;
+  padding: 5px 18px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
