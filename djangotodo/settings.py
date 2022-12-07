@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+import dj_database_url
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -27,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
 
-    'btktechcom-production.up.railway.app','127.0.0.1','btktech.com.tw','www.btktech.com.tw'
+    'btktechcom-production.up.railway.app', '127.0.0.1', 'btktech.com.tw', 'www.btktech.com.tw'
 
 ]
 
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'django_filters',
     'ckeditor',
     'herrmann',
+    'plastic',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +85,6 @@ WSGI_APPLICATION = 'djangotodo.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -91,7 +92,6 @@ DATABASES = {
     }
 }
 
-import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 

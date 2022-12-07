@@ -7,7 +7,7 @@
                 <div class="feature-content">
                     <div class="title">
                         <span class="wow fadeInRight" data-wow-delay=".3s">Ultrasonic welding machines</span>
-                        <h3 class="wow fadeInRight" data-wow-delay=".5s">超音波塑膠熔接</h3>
+                        <h3 class="wow fadeInRight" data-wow-delay=".5s">超音波塑膠焊接</h3>
                     </div>
                     <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
                         <div class="feature-thumb">
@@ -15,10 +15,11 @@
                         </div>
                         <div class="banner-content" style="padding-top: 2%;">
                             <h2 class="title">
-                                超音波熔接設備實現絕佳接合效果
+                                超音波焊接設備實現絕佳接合效果
                             </h2>
                             <p>
-                                超音波熔接是非常柔和接合技術，適用于熱塑性材料和有色金屬。手動工作台在塑料加工業應用廣泛且方式多種多樣。使用者手動裝載要熔接的塑料組件，熔接完成後再將其從超音波熔接設備中取出。不同尺寸和幾何形狀部件的焊接，可通過一個或多個超音波焊頭完成。半自動化解決方案支持生產高品質熱塑性塑料產品的工作流程，同時我們還為銅箔和鋁箔提供合適的機台，即用於鋰離子電池和芯線束的機台。無論是標準產品還是客製機台，所有Herrmann超音波熔接機都在德國Karlsbad的母工廠研發和生產。 <br><br>                                Herrmann超音波熔接機由銘機實業獨家代理，更多相關資訊請歡迎來信: <a style="color:#3e54ff;" href="mailto:billy@mail.mingjilee.com"> billy@mail.mingjilee.com</a>
+                                超音波焊接是非常柔和接合技術，主要應用於汽車、家電、電子和醫療行業，尤其適用於需要經久耐用、緊密密封、外觀無痕跡連接的情況。不同尺寸和幾何形狀部件的焊接，可通過一個或多個超音波焊頭完成。無論是標準產品還是客製機台，所有Herrmann超音波焊接機都在德國Karlsbad的母工廠研發和生產。
+                                <br><br> Herrmann超音波熔接機由銘機實業獨家代理，更多相關資訊請歡迎來信: <a style="color:#3e54ff;" href="mailto:btk@btktech.com.tw">btk@btktech.com.tw</a> / <a style="color:#3e54ff;" href="mailto:btk@btktech.com.tw">billy@mail.mingjilee.com </a>
                             </p>
                         </div>
                     </div>
@@ -26,56 +27,56 @@
             </div>
 
 
-            <div class="row col-lg-12 col-md-12 col-12">
+            <div class="row col-lg-12 col-md-12 col-12 ">
                 {% for herrmann in object_list %}
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
                     <!-- Button trigger modal -->
-                    <span type="button" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ herrmann.id }}">
-                            <img src="{{ herrmann.welding_img_001 }}">
+                    <span type="button " data-bs-toggle="modal " data-bs-target="#exampleModal-{{ herrmann.id }} ">
+                            <img src="{{ herrmann.welding_img_001 }} ">
                         </span>
                     <h5>{{ herrmann.welding_tit }}</h5>
                 </div>
                 {% endfor %} {% for herrmann in object_list %}
                 <!-- Modal -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="modal fade" id="exampleModal-{{ herrmann.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel exampleModal">{{ herrmann.welding_tit }}</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="col-lg-6 col-md-6 ">
+                    <div class="modal fade " id="exampleModal-{{ herrmann.id }} " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+                        <div class="modal-dialog modal-xl ">
+                            <div class="modal-content ">
+                                <div class="modal-header ">
+                                    <h5 class="modal-title " id="exampleModalLabel exampleModal ">{{ herrmann.welding_tit }}</h5>
+                                    <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body ">
                                     {{ herrmann.welding_cont |safe }}
 
-                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ herrmann.welding_seri_001_tit_01 }}</button>
+                                    <ul class="nav nav-pills mb-3 " id="pills-tab " role="tablist ">
+                                        <li class="nav-item " role="presentation ">
+                                            <button class="nav-link active " id="pills-home-tab " data-bs-toggle="pill " data-bs-target="#pills-home-{{ herrmann.id }} " type="button " role="tab " aria-controls="pills-home " aria-selected="true ">{{ herrmann.welding_seri_001_tit_01 }}</button>
                                         </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ herrmann.welding_seri_001_tit_02 }}</button>
+                                        <li class="nav-item " role="presentation ">
+                                            <button class="nav-link " id="pills-profile-tab " data-bs-toggle="pill " data-bs-target="#pills-profile-{{ herrmann.id }} " type="button " role="tab " aria-controls="pills-profile " aria-selected="false ">{{ herrmann.welding_seri_001_tit_02 }}</button>
                                         </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="pills-logic-tab" data-bs-toggle="pill" data-bs-target="#pills-logic-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-logic" aria-selected="false">{{ herrmann.welding_seri_001_tit_03 }}</button>
+                                        <li class="nav-item " role="presentation ">
+                                            <button class="nav-link " id="pills-logic-tab " data-bs-toggle="pill " data-bs-target="#pills-logic-{{ herrmann.id }} " type="button " role="tab " aria-controls="pills-logic " aria-selected="false ">{{ herrmann.welding_seri_001_tit_03 }}</button>
                                         </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="pills-solid-tab" data-bs-toggle="pill" data-bs-target="#pills-solid-{{ herrmann.id }}" type="button" role="tab" aria-controls="pills-solid" aria-selected="false">{{ herrmann.welding_seri_001_tit_04 }}</button>
+                                        <li class="nav-item " role="presentation ">
+                                            <button class="nav-link " id="pills-solid-tab " data-bs-toggle="pill " data-bs-target="#pills-solid-{{ herrmann.id }} " type="button " role="tab " aria-controls="pills-solid " aria-selected="false ">{{ herrmann.welding_seri_001_tit_04 }}</button>
                                         </li>
                                     </ul>
 
-                                    <div class="tab-content" id="pills-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-home-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="tab-content " id="pills-tabContent ">
+                                        <div class="tab-pane fade show active " id="pills-home-{{ herrmann.id }} " role="tabpanel " aria-labelledby="pills-home-tab ">
                                             {{ herrmann.welding_seri_001_1|safe }}
                                         </div>
-                                        <div class="tab-pane fade" id="pills-profile-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <div class="tab-pane fade " id="pills-profile-{{ herrmann.id }} " role="tabpanel " aria-labelledby="pills-profile-tab ">
                                             {{ herrmann.welding_seri_001_2|safe }}
                                         </div>
 
-                                        <div class="tab-pane fade" id="pills-logic-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <div class="tab-pane fade " id="pills-logic-{{ herrmann.id }} " role="tabpanel " aria-labelledby="pills-profile-tab ">
                                             {{ herrmann.welding_seri_001_3|safe }}
                                         </div>
 
-                                        <div class="tab-pane fade" id="pills-solid-{{ herrmann.id }}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <div class="tab-pane fade " id="pills-solid-{{ herrmann.id }} " role="tabpanel " aria-labelledby="pills-profile-tab ">
                                             {{ herrmann.welding_seri_001_4|safe }}
                                         </div>
                                     </div>
@@ -83,8 +84,8 @@
 
 
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <div class="modal-footer ">
+                                    <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
                                 </div>
                             </div>
                         </div>

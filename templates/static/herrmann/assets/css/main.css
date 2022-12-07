@@ -16,7 +16,7 @@ body {
   font-family: "Sen", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #5E678C;
+  color: #5e678c;
   overflow-x: hidden;
 }
 
@@ -40,7 +40,7 @@ button:focus,
 }
 
 a:hover {
-  color: #3E54FF;
+  color: #3e54ff;
 }
 
 a {
@@ -157,7 +157,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #3E54FF;
+  background: #3e54ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,7 +227,7 @@ p {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background: #3E54FF;
+  background: #3e54ff;
   -webkit-animation: preloader-fx 1.6s linear infinite;
   animation: preloader-fx 1.6s linear infinite;
 }
@@ -1020,7 +1020,7 @@ p {
 .header .toolbar-area .toolbar-contact p i {
   display: inline-block;
   margin-right: 6px;
-  color: #3E54FF;
+  color: #3e54ff;
   font-size: 15px;
 }
 
@@ -1038,7 +1038,8 @@ p {
   color: #777;
 }
 
-.header .toolbar-area .toolbar-contact ul li:last-child {}
+.header .toolbar-area .toolbar-contact ul li:last-child {
+}
 
 .header .toolbar-area .toolbar-sl-share ul {
   float: right;
@@ -1101,7 +1102,7 @@ p {
 .navbar-area.sticky {
   position: fixed;
   z-index: 99;
-  background: #3E54FF;
+  background: #3e54ff;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-out 0s;
   background: #fff;
@@ -1200,7 +1201,7 @@ p {
 }
 
 .navbar-nav .nav-item:hover a {
-  color: #3E54FF;
+  color: #3e54ff;
 }
 
 .navbar-nav .nav-item a {
@@ -1226,7 +1227,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
-(max-width: 767px) {
+  (max-width: 767px) {
   .navbar-nav .nav-item a {
     color: #051441;
     display: flex;
@@ -1240,7 +1241,7 @@ p {
 }
 
 .navbar-nav .nav-item a.active {
-  color: #3E54FF;
+  color: #3e54ff;
 }
 
 .navbar-nav .nav-item a.dd-menu {
@@ -1274,7 +1275,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
-(max-width: 767px) {
+  (max-width: 767px) {
   .navbar-nav .nav-item a.dd-menu::after {
     top: 16px;
     right: 0;
@@ -1283,19 +1284,19 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
-(max-width: 767px) {
+  (max-width: 767px) {
   .navbar-nav .nav-item a.collapsed::after {
     transform: rotate(0deg);
   }
 }
 
-.navbar-nav .nav-item:hover>.sub-menu {
+.navbar-nav .nav-item:hover > .sub-menu {
   top: 100%;
   opacity: 1;
   visibility: visible;
 }
 
-.navbar-nav .nav-item:hover>.sub-menu .sub-menu {
+.navbar-nav .nav-item:hover > .sub-menu .sub-menu {
   left: 100%;
   top: 0;
 }
@@ -1322,14 +1323,14 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
-(max-width: 767px) {
+  (max-width: 767px) {
   .navbar-nav .nav-item .sub-menu.collapse:not(.show) {
     display: none;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
-(max-width: 767px) {
+  (max-width: 767px) {
   .navbar-nav .nav-item .sub-menu {
     position: static;
     width: 100%;
@@ -1337,7 +1338,7 @@ p {
     visibility: visible;
     box-shadow: none;
     padding: 0;
-	margin:0;
+    margin: 0;
   }
 
   .navbar-nav .nav-item .sub-menu::after {
@@ -1345,21 +1346,21 @@ p {
   }
 }
 
-.navbar-nav .nav-item .sub-menu>li {
+.navbar-nav .nav-item .sub-menu > li {
   display: block;
   margin-left: 0;
 }
 
-.navbar-nav .nav-item .sub-menu>li:last-child {
+.navbar-nav .nav-item .sub-menu > li:last-child {
   border: none;
 }
 
-.navbar-nav .nav-item .sub-menu>li.active>a,
-.navbar-nav .nav-item .sub-menu>li:hover>a {
-  color: #3E54FF;
+.navbar-nav .nav-item .sub-menu > li.active > a,
+.navbar-nav .nav-item .sub-menu > li:hover > a {
+  color: #3e54ff;
 }
 
-.navbar-nav .nav-item .sub-menu>li>a {
+.navbar-nav .nav-item .sub-menu > li > a {
   font-weight: 400;
   display: block;
   padding: 10px 15px;
@@ -1369,13 +1370,13 @@ p {
   font-weight: 400;
 }
 
-.navbar-nav .nav-item .sub-menu>li:first-child a {
+.navbar-nav .nav-item .sub-menu > li:first-child a {
   border: none;
 }
 
-.navbar-nav .nav-item .sub-menu>li>a:hover {
+.navbar-nav .nav-item .sub-menu > li > a:hover {
   background: rgba(0, 0, 0, 0.05);
-  color: #3E54FF;
+  color: #3e54ff;
 }
 
 /*======================================
@@ -1415,12 +1416,11 @@ p {
 
 .hero-slider .hero-text {
   float: none;
-  margin-top: 150px;
 }
 
 .hero-slider .hero-text .small-title {
   color: #fff;
-  background: #3E54FF;
+  background: #3e54ff;
   font-size: 15px;
   padding: 5px 18px;
   display: inline-block;
@@ -1464,11 +1464,11 @@ p {
 }
 
 .hero-slider .hero-text .button .btn .dir-part {
-  background-color: #3E54FF;
+  background-color: #3e54ff;
 }
 
 .hero-slider .hero-text .button .btn:hover {
-  border-color: #3E54FF;
+  border-color: #3e54ff;
   color: #fff;
 }
 
@@ -1480,14 +1480,13 @@ p {
   margin-top: 175px;
 }
 
-
 /* Slider Dots*/
 .hero-slider .home-slider {
   position: relative;
 }
 
 .hero-slider .tns-nav {
-  background: #3E54FF;
+  background: #3e54ff;
   display: inline-block;
   padding: 8px 20px 8px 20px;
   border-radius: 3px;
@@ -1525,7 +1524,6 @@ p {
 /*=========================
    End Hero Area CSS
 ===========================*/
-
 
 /*=============================
 	03. Start Features CSS
@@ -1573,12 +1571,12 @@ p {
 .Features .feature-item .feature-thumb {
   height: 55px;
   width: 55px;
-  background: url(../images/feature-icon-bg.png) no-repeat center center;
+  /* background: url(../images/feature-icon-bg.png) no-repeat center center; */
   background-size: contain;
-  font-size: 23px;
+  font-size: 50px;
   line-height: 55px;
   text-align: center;
-  color: #ffffff;
+  color: #3e54ff;
   display: inline-block;
   position: absolute;
   left: 0;
@@ -1594,9 +1592,9 @@ p {
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 0px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 38px;
+  font-size: 19px;
+  /* font-weight: 600; */
+  line-height: 78px;
 }
 
 .Features .feature-item .banner-content p {
@@ -1609,7 +1607,7 @@ p {
 
 .feature-right {
   position: relative;
-  background-image: url('../images/feature-image.jpg');
+  background-image: url("../images/feature-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1650,7 +1648,7 @@ p {
 }
 
 .feature-right .video-head .video:hover {
-  background: #3E54FF;
+  background: #3e54ff;
   color: #fff;
 }
 
@@ -1658,7 +1656,7 @@ p {
   height: 80px;
   width: 80px;
   background: #fff;
-  color: #3E54FF;
+  color: #3e54ff;
   text-align: center;
   line-height: 84px;
   border-radius: 50%;
@@ -1668,7 +1666,7 @@ p {
 
 .feature-right .video-head .video:before {
   position: absolute;
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -1684,7 +1682,7 @@ p {
 
 .feature-right .video-head .video:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -1702,12 +1700,11 @@ p {
 	End Features CSS
 ===============================*/
 
-
 /*=============================
 	04. Start Services CSS
 ===============================*/
 .services {
-  background: #F9FAFF;
+  background: #f9faff;
   padding-bottom: 85px;
 }
 
@@ -1740,22 +1737,22 @@ p {
   line-height: 65px;
   text-align: center;
   background: #74b9ff;
-  color: #3E54FF;
+  color: #3e54ff;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  background: #3E54FF0f;
+  background: #3e54ff0f;
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 }
 
 .services .single-service:hover {
-  background: #3E54FF;
+  background: #3e54ff;
 }
 
 .services .single-service:hover .serial span {
   border-color: transparent;
   background: #fff;
-  color: #3E54FF;
+  color: #3e54ff;
   border-radius: 50%;
 }
 
@@ -1785,7 +1782,6 @@ p {
   color: #fff;
 }
 
-
 .services .single-service {
   position: relative;
   z-index: 2;
@@ -1813,7 +1809,7 @@ p {
   display: block;
   margin-bottom: 25px;
   padding-bottom: 15px;
-  color: #181E4E;
+  color: #181e4e;
   position: relative;
 }
 
@@ -1824,7 +1820,7 @@ p {
   bottom: 0;
   height: 3px;
   width: 80px;
-  background: #3E54FF;
+  background: #3e54ff;
   z-index: 1;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1850,7 +1846,7 @@ p {
   color: #fff;
   font-weight: 600;
   font-size: 23px;
-  color: #181E4E;
+  color: #181e4e;
 }
 
 .services .single-service .content p {
@@ -1863,15 +1859,15 @@ p {
 }
 
 .services .single-service .content .button .btn {
-  border: 2px solid #3E54FF;
-  color: #3E54FF;
+  border: 2px solid #3e54ff;
+  color: #3e54ff;
   background: transparent;
 }
 
 .services .single-service .content .button .btn:hover {
   border-color: transparent;
   color: #fff;
-  background: #3E54FF;
+  background: #3e54ff;
 }
 
 /*=============================
@@ -1900,7 +1896,7 @@ p {
 
 .pricing-table .single-table .popular {
   color: #fff;
-  background: #3E54FF;
+  background: #3e54ff;
   display: inline-block;
   padding: 5px 70px;
   position: absolute;
@@ -1911,7 +1907,8 @@ p {
 }
 
 /* Table Head */
-.pricing-table .single-table .table-head {}
+.pricing-table .single-table .table-head {
+}
 
 .pricing-table .single-table .title {
   font-size: 23px;
@@ -1984,32 +1981,39 @@ p {
 	End Pricing Table CSS
 ===============================*/
 
-
 /*======================================
    12. Start Clients CSS
 ========================================*/
 
 .client-logo-section {
-  background: #F9FAFF;
+  background: #f9faff;
   padding: 50px 0;
 }
 
 .client-logo-section .client-logo-wrapper .client-logo-carousel .client-logo {
   padding: 10px;
   text-align: center;
-  margin: auto
+  margin: auto;
 }
 
-.client-logo-section .client-logo-wrapper .client-logo-carousel .client-logo img {
+.client-logo-section
+  .client-logo-wrapper
+  .client-logo-carousel
+  .client-logo
+  img {
   max-width: 220px;
   width: 100%;
-  opacity: .3;
-  -webkit-transition: all .3s ease-out 0s;
-  transition: all .3s ease-out 0s
+  opacity: 0.3;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
-.client-logo-section .client-logo-wrapper .client-logo-carousel .client-logo img:hover {
-  opacity: 1
+.client-logo-section
+  .client-logo-wrapper
+  .client-logo-carousel
+  .client-logo
+  img:hover {
+  opacity: 1;
 }
 
 /*======================================
@@ -2020,8 +2024,8 @@ p {
 	16. Start Newsletter CSS
 ========================================*/
 .newsletter {
-  background-image: url('../images/pattern.png');
-  background-color: #3E54FF;
+  background-image: url("../images/pattern.png");
+  background-color: #3e54ff;
 }
 
 .newsletter .subscribe-text h6 {
@@ -2084,7 +2088,7 @@ p {
 }
 
 .newsletter .button button .dir-part {
-  background-color: #3E54FF;
+  background-color: #3e54ff;
 }
 
 .newsletter .button button:hover {
@@ -2095,7 +2099,6 @@ p {
 /*======================================
 	End Newsletter CSS
 ========================================*/
-
 
 /*======================================
 	17. Start Footer CSS
@@ -2134,7 +2137,8 @@ p {
   margin-top: 35px;
 }
 
-.footer .f-about .footer-social ul {}
+.footer .f-about .footer-social ul {
+}
 
 .footer .f-about .footer-social ul li {
   display: inline-block;
@@ -2169,7 +2173,8 @@ p {
   border: 1px solid #eee;
 }
 
-.footer .newsletter-form form {}
+.footer .newsletter-form form {
+}
 
 .footer .newsletter-form input {
   width: 400px;
@@ -2248,12 +2253,13 @@ p {
 }
 
 .footer .f-link ul li a:hover {
-  color: #3E54FF;
+  color: #3e54ff;
   padding-left: 5px;
 }
 
 /* Footer Contact */
-.footer .f-contact {}
+.footer .f-contact {
+}
 
 .footer .f-contact p {
   color: #555;
@@ -2261,7 +2267,8 @@ p {
   line-height: 30px;
 }
 
-.footer .f-contact ul {}
+.footer .f-contact ul {
+}
 
 .footer .f-contact ul li {
   display: inline-block;
@@ -2282,14 +2289,14 @@ p {
   padding: 0;
 }
 
-.footer .f-contact ul li a i {}
+.footer .f-contact ul li a i {
+}
 
 .footer .f-contact ul li i {
   display: inline-block;
   margin-right: 7px;
   font-size: 17px;
-  color: #3E54FF;
-
+  color: #3e54ff;
 }
 
 .footer .custom-flex {
@@ -2324,7 +2331,7 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background: #3E54FF;
+  background: #3e54ff;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.4s ease;
@@ -2374,7 +2381,8 @@ p {
   height: 100px;
 }
 
-.footer .footer-bottom {}
+.footer .footer-bottom {
+}
 
 .footer .footer-bottom .inner {
   padding: 30px 0;
@@ -2393,10 +2401,11 @@ p {
 }
 
 .footer .footer-bottom p a:hover {
-  color: #3E54FF;
+  color: #3e54ff;
 }
 
-.footer .footer-bottom .left {}
+.footer .footer-bottom .left {
+}
 
 .footer .footer-bottom .right {
   text-align: right;
@@ -2406,11 +2415,10 @@ p {
 	End Footer	CSS
 ========================================*/
 
-
 .free-version-banner {
   position: relative;
   background: #3e54ff;
-  background-image: url('../images/pattern.png');
+  background-image: url("../images/pattern.png");
 }
 
 .free-version-banner .section-title {
