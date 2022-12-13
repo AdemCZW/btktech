@@ -1,34 +1,33 @@
-{% extends 'home.html' %}
-{% block content %}
-    <!-- Start Features Area -->
-    <section class="Features section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-12">
-                    <div class="feature-content">
-                        <div class="title">
-                            
-                            <h3 class="wow fadeInRight" data-wow-delay=".5s">關於我們</h3>
-                        </div>
-                        {% for herrmann in object_list %}
-                        <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
-                            <div class="feature-thumb">
-                                <i class="lni lni-arrow-right-circle"></i>
-                            </div>
-                            <div class="banner-content" style="padding-top: 2%;">
-                                <h2 class="title">BTK Ultrasonic & Machinery Tech. Co., Ltd
-                                </h2>
-                                <p>{{ herrmann.about_txt_001_sp }}</p>
-                            </div>
-                        </div>
-                        {% endfor %}
+{% extends 'home.html' %} {% block content %}
+<!-- Start Features Area -->
+<section class="Features section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="feature-content">
+                    <div class="title">
+
+                        <h3 class="wow fadeInRight" data-wow-delay=".5s">關於我們</h3>
                     </div>
+                    {% for herrmann in object_list %}
+                    <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
+                        <div class="feature-thumb">
+                            <i class="lni lni-arrow-right-circle"></i>
+                        </div>
+                        <div class="banner-content" style="padding-top: 2%;">
+                            <h2 class="title">BTK Ultrasonic & Machinery Tech. Co., Ltd
+                            </h2>
+                            <p>{{ herrmann.about_txt_001_sp |safe }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
-                
             </div>
-                
+
         </div>
-    </section>
-    
-    <!-- End Features Area -->
-{% endblock  %}
+
+    </div>
+</section>
+
+<!-- End Features Area -->
+{% endblock %}
