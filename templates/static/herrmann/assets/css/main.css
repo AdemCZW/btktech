@@ -1593,7 +1593,7 @@ p {
   margin-bottom: 0px;
   font-size: 19px;
   /* font-weight: 600; */
-  line-height: 78px;
+  line-height: 55px;
 }
 
 .Features .feature-item .banner-content p {
@@ -1606,7 +1606,7 @@ p {
 
 .feature-right {
   position: relative;
-  background-image: url("../images/feature-image.jpg");
+  background-image: url("../images/image1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
