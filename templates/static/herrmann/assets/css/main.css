@@ -1559,7 +1559,6 @@ p {
 .Features .feature-item {
   margin-bottom: 15px;
   position: relative;
-  padding-left: 80px;
   padding-right: 30px;
 }
 
@@ -1593,7 +1592,7 @@ p {
   margin-bottom: 0px;
   font-size: 19px;
   /* font-weight: 600; */
-  line-height: 55px;
+  line-height: 27px;
 }
 
 .Features .feature-item .banner-content p {
