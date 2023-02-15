@@ -1532,7 +1532,6 @@ p {
 }
 
 .Features .feature-content {
-  padding-left: 50px;
   padding-bottom: 30px;
 }
 
@@ -2116,7 +2115,7 @@ p {
 }
 
 .footer .logo img {
-  width: 250px;
+  width: 160px;
 }
 
 .footer .f-about {
