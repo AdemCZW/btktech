@@ -14,9 +14,9 @@ class home_poly(models.Model):
         max_length=100000, verbose_name='輪播圖片-2', blank=True)
     poly_index_004 = models.CharField(
         max_length=100000, verbose_name='輪播圖片-3', blank=True)
-    poly_index_002 = models.CharField(
+    poly_index_005 = models.CharField(
         max_length=100000, verbose_name='輪播圖片-4', blank=True)
-    poly_index_002 = models.CharField(
+    poly_index_006 = models.CharField(
         max_length=100000, verbose_name='輪播圖片-5', blank=True)
 
     def __str__(self):
