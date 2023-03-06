@@ -1,16 +1,15 @@
 from django.contrib import admin
-from .models import home_poly
+from .models import home_poly, ffmm_page
 
 
-class poly_index_01_Admin(admin.ModelAdmin):
+class ffmm_page_Admin(admin.ModelAdmin):
 
     fieldsets = (
         ['CH-Area', {
-            'fields': ('poly_index_001', 'poly_index_002', 'poly_index_003', 'poly_index_004', 'poly_index_005', 'poly_index_006'),
+            'fields': ('ffmm_tit', 'ffmm_num', 'ffmm_img', 'ffmm_det')
         }]
     )
 
 
-admin.site.register(home_poly)
-
+admin.site.register(ffmm_page)
 # Register your models here.
