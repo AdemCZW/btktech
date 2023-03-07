@@ -18,11 +18,11 @@ class home_poly(models.Model):
         max_length=100000, verbose_name='輪播圖片-5', blank=True)
 
     def __str__(self):
-        return "塑膠首頁" + str(self.id) + " 號 "
+        return " No. " + str(self.id)
 
     class Meta:
-        verbose_name_plural = "塑膠首頁"
-        verbose_name = "塑膠首頁"
+        verbose_name_plural = "poly-home"
+        verbose_name = "poly-home"
 
 
 class ffmm_page(models.Model):
@@ -37,8 +37,8 @@ class ffmm_page(models.Model):
         max_length=10000, default='產品規格', blank=True, null=True, verbose_name='內容')
 
     def __str__(self):
-        return "塑膠資料夾" + str(self.id) + " 號 "
+        return " No. " + str(self.id)
 
     class Meta:
-        verbose_name_plural = "塑膠資料夾"
-        verbose_name = "塑膠資料夾"
+        verbose_name_plural = "file folder"
+        verbose_name = "file folder"
