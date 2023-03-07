@@ -1060,3 +1060,23 @@ class consumer_01(models.Model):
     class Meta:
         verbose_name_plural = "Branch-Consumer"
         verbose_name = "Branch-Consumer"
+
+
+class pla_index(models.Model):
+    pla_index_001 = models.CharField(
+        max_length=100000, verbose_name='輪播圖片-1', blank=True)
+    pla_index_002 = models.CharField(
+        max_length=100000, verbose_name='輪播圖片-2', blank=True)
+    pla_index_003 = models.CharField(
+        max_length=100000, verbose_name='輪播圖片-3', blank=True)
+    pla_index_004 = models.CharField(
+        max_length=100000, verbose_name='輪播圖片-4', blank=True)
+    pla_index_005 = models.CharField(
+        max_length=100000, verbose_name='輪播圖片-5', blank=True)
+
+    def __str__(self):
+        return " No. " + str(self.id)
+
+    class Meta:
+        verbose_name_plural = "plastic-home"
+        verbose_name = "plastic-home"
