@@ -10,9 +10,9 @@ from .views import (
     WeddingMyListView,
     StudioListView,
     ServiceListView,
-    Price001ListView,Price002ListView,Price003ListView,Price004ListView,
-    PnListView,SgListView,PfListView,CpListView,PtListView,AtListView,
-    AtDetailView,Wedding01ListView,Wedding02ListView,Wedding03ListView,
+    Price001ListView, Price002ListView, Price003ListView, Price004ListView,
+    PnListView, SgListView, PfListView, CpListView, PtListView, AtListView,
+    AtDetailView, Wedding01ListView, Wedding02ListView, Wedding03ListView,
     Wedding04ListView
 
 

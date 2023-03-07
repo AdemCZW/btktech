@@ -26,8 +26,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('herrmann.urls')),
     path('index/', include('herrmann.urls')),
-    path('flight/', include('todo.urls')),
-    path('wedding/', include('todo.urls')),
     path('herrmann/', include('herrmann.urls')),
     path('polyacetal/', include('polyacetal.urls')),
 
