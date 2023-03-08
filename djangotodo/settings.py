@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
 
-    'btktechcom-production.up.railway.app', '127.0.0.1', 'btktech.com.tw', 'www.btktech.com.tw'
+    'btktechcom-production.up.railway.app', '127.0.0.1', 'btktech.com.tw', 'www.btktech.com.tw', 'https://wilson22316.github.io/ming_test'
 
 ]
 
