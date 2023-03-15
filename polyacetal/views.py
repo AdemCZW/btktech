@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate
 from django.utils.decorators import method_decorator
 from django.contrib import auth
-from .models import home_poly
+from .models import home_poly, ffmm_page, bcm_page, bes_page, el_page, ma_page
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .serializers import poly_serializer
 from rest_framework.decorators import api_view
@@ -29,13 +29,13 @@ class DetailAPIview(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = poly_serializer
 
 
-class apiviewset(ModelViewSet):
-    queryset = home_poly.objects.all()
+class ListCreateAPIView_ffmm_page(generics.ListCreateAPIView):
+    queryset = ffmm_page.objects.all()
     serializer_class = poly_serializer
 
 
-class poly_index(ModelViewSet):
-    queryset = home_poly.objects.all()
+class DetailAPIview_ffmm_page(generics.RetrieveUpdateDestroyAPIView):
+    queryset = ffmm_page.objects.all()
     serializer_class = poly_serializer
 
 
