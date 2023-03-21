@@ -29,6 +29,4 @@ urlpatterns = [
     path('index/', include('herrmann.urls')),
     path('herrmann/', include('herrmann.urls')),
     path('polyacetal/', include('polyacetal.urls')),
-    re_path(r'^.*', TemplateView.as_view(template_name='index.html')),
-
 ]
